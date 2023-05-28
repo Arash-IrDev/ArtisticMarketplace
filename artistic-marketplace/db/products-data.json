@@ -1,0 +1,721 @@
+[
+  {
+    "name": "Beautiful Picture of a Girl with Her Mother and Father in a Garden",
+    "category": [
+      "People",
+      "Family"
+    ],
+    "price": 39.99,
+    "currency": "USD",
+    "image": {
+      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/a_beautiful_picture_of_a_girl_with_her_mother_and_father_in_a_garden.jpg",
+      "alt": "Beautiful Picture of a Girl with Her Mother and Father in a Garden"
+    },
+    "bestseller": false,
+    "featured": true,
+    "details": {
+      "dimensions": {
+        "width": 600,
+        "height": 352
+      },
+      "size": 48,
+      "description": "Capture the love and joy of a family in this beautiful garden setting.",
+      "recommendations": [
+        "Family Portraits",
+        "Outdoor Photography"
+      ]
+    }
+  },
+  {
+    "name": "Black and White Photo of a Dog in a Field",
+    "category": [
+      "Nature",
+      "Pets"
+    ],
+    "price": 29.99,
+    "currency": "USD",
+    "image": {
+      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/a_black_and_white_photo_of_a_dog_in_a_field.jpg",
+      "alt": "Black and White Photo of a Dog in a Field"
+    },
+    "bestseller": true,
+    "featured": true,
+    "details": {
+      "dimensions": {
+        "width": 600,
+        "height": 600
+      },
+      "size": 48,
+      "description": "Add a touch of elegance to your space with this captivating black and white photograph of a dog in a field.",
+      "recommendations": [
+        "Animal Lovers",
+        "Black and White Photography"
+      ]
+    }
+  },
+  {
+    "name": "Black and White Photo of a Man Holding a Child",
+    "category": [
+      "People",
+      "Family"
+    ],
+    "price": 34.99,
+    "currency": "USD",
+    "image": {
+      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/a_black_and_white_photo_of_a_man_holding_a_child.jpg",
+      "alt": "Black and White Photo of a Man Holding a Child"
+    },
+    "bestseller": false,
+    "featured": false,
+    "details": {
+      "dimensions": {
+        "width": 400,
+        "height": 600
+      },
+      "size": 24,
+      "description": "Embrace the tenderness of a father's love with this captivating black and white photograph.",
+      "recommendations": [
+        "Father's Day Gifts",
+        "Family Moments"
+      ]
+    }
+  },
+  {
+    "name": "Breathtaking Photo of a Sea Dawn Landscape at Sunset",
+    "category": [
+      "Nature"
+    ],
+    "price": 49.99,
+    "currency": "USD",
+    "image": {
+      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/a_breathtaking_photo_of_a_sea_dawn_landscape_at_sunset.jpg",
+      "alt": "Breathtaking Photo of a Sea Dawn Landscape at Sunset"
+    },
+    "bestseller": false,
+    "featured": true,
+    "details": {
+      "dimensions": {
+        "width": 570,
+        "height": 600
+      },
+      "size": 32,
+      "description": "Bring the serenity of a sea dawn landscape into your space with this captivating photograph taken at sunset.",
+      "recommendations": [
+        "Seascape Wall Art",
+        "Nature Photography"
+      ]
+    }
+  },
+  {
+    "name": "Close-Up of a Poodle Dog Looking at the Camera",
+    "category": [
+      "Pets"
+    ],
+    "price": 19.99,
+    "currency": "USD",
+    "image": {
+      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/a_close_up_of_a_poodle_dog_looking_at_the_camera.jpg",
+      "alt": "Close-Up of a Poodle Dog Looking at the Camera"
+    },
+    "bestseller": true,
+    "featured": true,
+    "details": {
+      "dimensions": {
+        "width": 480,
+        "height": 600
+      },
+      "size": 36,
+      "description": "Celebrate the charm and playful nature of poodles with this adorable close-up photograph.",
+      "recommendations": [
+        "Dog Lovers",
+        "Animal Portraits"
+      ]
+    }
+  },
+  {
+    "name": "Couple of Kids Sitting in Front of a Book",
+    "category": [
+      "People",
+      "Children/Kids"
+    ],
+    "price": 24.99,
+    "currency": "USD",
+    "image": {
+      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/a_couple_of_kids_that_are_sitting_in_front_of_a_book.jpg",
+      "alt": "Couple of Kids Sitting in Front of a Book"
+    },
+    "bestseller": false,
+    "featured": false,
+    "details": {
+      "dimensions": {
+        "width": 400,
+        "height": 600
+      },
+      "size": 28,
+      "description": "Encourage a love for reading with this delightful photograph capturing the innocence of childhood.",
+      "recommendations": [
+        "Children's Room Decor",
+        "Education and Learning"
+      ]
+    }
+  },
+  {
+    "name": "Couple of People Laying on the Ground",
+    "category": [
+      "People"
+    ],
+    "price": 29.99,
+    "currency": "USD",
+    "image": {
+      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/a_couple_of_people_that_are_laying_on_the_ground.jpg",
+      "alt": "Couple of People Laying on the Ground"
+    },
+    "bestseller": false,
+    "featured": false,
+    "details": {
+      "dimensions": {
+        "width": 600,
+        "height": 600
+      },
+      "size": 44,
+      "description": "Capture the carefree and relaxed moments of life with this candid photograph of a couple enjoying the outdoors.",
+      "recommendations": [
+        "Romantic Moments",
+        "Outdoor Lifestyle"
+      ]
+    }
+  },
+  {
+    "name": "Guy and Lady Bouncing and Dancing on the Beach",
+    "category": [
+      "People",
+      "Lifestyle"
+    ],
+    "price": 39.99,
+    "currency": "USD",
+    "image": {
+      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/a_guy_and_a_lady_are_bouncing_and_dancing_on_the_beach.jpg",
+      "alt": "Guy and Lady Bouncing and Dancing on the Beach"
+    },
+    "bestseller": true,
+    "featured": true,
+    "details": {
+      "dimensions": {
+        "width": 600,
+        "height": 411
+      },
+      "size": 44,
+      "description": "Embrace the joy of summer and beach vibes with this energetic and lively photograph.",
+      "recommendations": [
+        "Beach Lifestyle",
+        "Fun and Happiness"
+      ]
+    }
+  },
+  {
+    "name": "Lady and Guy Holding Babies",
+    "category": [
+      "People",
+      "Family"
+    ],
+    "price": 34.99,
+    "currency": "USD",
+    "image": {
+      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/a_lady_and_a_guy_are_both_holding_babies.jpg",
+      "alt": "Lady and Guy Holding Babies"
+    },
+    "bestseller": false,
+    "featured": false,
+    "details": {
+      "dimensions": {
+        "width": 600,
+        "height": 400
+      },
+      "size": 28,
+      "description": "Celebrate the beauty of parenthood with this heartwarming photograph capturing the love and bond between a couple and their babies.",
+      "recommendations": [
+        "Newborn Photography",
+        "Family Moments"
+      ]
+    }
+  },
+  {
+    "name": "Little Boy and Little Girl Walking Down a Street",
+    "category": [
+      "People",
+      "Children/Kids"
+    ],
+    "price": 44.99,
+    "currency": "USD",
+    "image": {
+      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/a_little_boy_and_a_little_girl_walking_down_a_street.jpg",
+      "alt": "Little Boy and Little Girl Walking Down a Street"
+    },
+    "bestseller": true,
+    "featured": false,
+    "details": {
+      "dimensions": {
+        "width": 400,
+        "height": 600
+      },
+      "size": 52,
+      "description": "Capture the innocence and curiosity of childhood with this charming photograph of a little boy and a little girl exploring the world together.",
+      "recommendations": [
+        "Children's Room Decor",
+        "Family Moments"
+      ]
+    }
+  },
+  {
+    "name": "Man Holding a Small Brown and White Dog",
+    "category": [
+      "People",
+      "Pets"
+    ],
+    "price": 29.99,
+    "currency": "USD",
+    "image": {
+      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/a_man_holding_a_small_brown_and_white_dog.jpg",
+      "alt": "Man Holding a Small Brown and White Dog"
+    },
+    "bestseller": true,
+    "featured": true,
+    "details": {
+      "dimensions": {
+        "width": 400,
+        "height": 600
+      },
+      "size": 32,
+      "description": "Celebrate the bond between humans and their furry friends with this heartwarming photograph of a man and his small dog.",
+      "recommendations": [
+        "Pet Lovers",
+        "Dog Portraits"
+      ]
+    }
+  },
+  {
+    "name": "Man Riding a Skateboard Down a Street at Night",
+    "category": [
+      "People",
+      "Lifestyle"
+    ],
+    "price": 39.99,
+    "currency": "USD",
+    "image": {
+      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/a_man_riding_a_skateboard_down_a_street_at_night.jpg",
+      "alt": "Man Riding a Skateboard Down a Street at Night"
+    },
+    "bestseller": false,
+    "featured": true,
+    "details": {
+      "dimensions": {
+        "width": 600,
+        "height": 600
+      },
+      "size": 32,
+      "description": "Embrace the thrill and excitement of the urban night scene with this dynamic photograph of a man skateboarding.",
+      "recommendations": [
+        "Urban Lifestyle",
+        "Skateboarding Enthusiasts"
+      ]
+    }
+  },
+  {
+    "name": "Man Taking a Picture of Himself with a Camera",
+    "category": [
+      "People"
+    ],
+    "price": 34.99,
+    "currency": "USD",
+    "image": {
+      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/a_man_taking_a_picture_of_himself_with_a_camera.jpg",
+      "alt": "Man Taking a Picture of Himself with a Camera"
+    },
+    "bestseller": false,
+    "featured": false,
+    "details": {
+      "dimensions": {
+        "width": 600,
+        "height": 600
+      },
+      "size": 36,
+      "description": "Celebrate the art of self-expression with this captivating photograph of a man taking a picture of himself.",
+      "recommendations": [
+        "Photography Enthusiasts",
+        "Self-Portraits"
+      ]
+    }
+  },
+  {
+    "name": "Person Laying on a Bed Reading a Book",
+    "category": [
+      "People",
+      "Lifestyle"
+    ],
+    "price": 49.99,
+    "currency": "USD",
+    "image": {
+      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/a_person_laying_on_a_bed_reading_a_book.jpg",
+      "alt": "Person Laying on a Bed Reading a Book"
+    },
+    "bestseller": false,
+    "featured": true,
+    "details": {
+      "dimensions": {
+        "width": 600,
+        "height": 600
+      },
+      "size": 52,
+      "description": "Create a cozy and relaxed ambiance with this peaceful photograph of a person enjoying a book on a bed.",
+      "recommendations": [
+        "Cozy Bedroom Decor",
+        "Bookworms"
+      ]
+    }
+  },
+  {
+    "name": "Pitcher of Coffee and Two Cookies on a Table",
+    "category": [
+      "Coffee"
+    ],
+    "price": 19.99,
+    "currency": "USD",
+    "image": {
+      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/a_pitcher_of_coffee_and_two_cookies_on_a_table.jpg",
+      "alt": "Pitcher of Coffee and Two Cookies on a Table"
+    },
+    "bestseller": true,
+    "featured": true,
+    "details": {
+      "dimensions": {
+        "width": 600,
+        "height": 600
+      },
+      "size": 56,
+      "description": "Savor the aroma and warmth of coffee with this inviting photograph of a pitcher of coffee and delicious cookies on a table.",
+      "recommendations": [
+        "Coffee Lovers",
+        "Food and Beverage Photography"
+      ]
+    }
+  },
+  {
+    "name": "Rice Field with a House in the Middle of It",
+    "category": [
+      "Nature"
+    ],
+    "price": 24.99,
+    "currency": "USD",
+    "image": {
+      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/a_rice_field_with_a_house_in_the_middle_of_it.jpg",
+      "alt": "Rice Field with a House in the Middle of It"
+    },
+    "bestseller": false,
+    "featured": false,
+    "details": {
+      "dimensions": {
+        "width": 400,
+        "height": 600
+      },
+      "size": 56,
+      "description": "Immerse yourself in the beauty and tranquility of nature with this serene photograph of a rice field and a house.",
+      "recommendations": [
+        "Landscape Art",
+        "Rural Sceneries"
+      ]
+    }
+  },
+  {
+    "name": "Small Brown Dog Standing in the Snow",
+    "category": [
+      "Pets"
+    ],
+    "price": 29.99,
+    "currency": "USD",
+    "image": {
+      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/a_small_brown_dog_standing_in_the_snow.jpg",
+      "alt": "Small Brown Dog Standing in the Snow"
+    },
+    "bestseller": false,
+    "featured": false,
+    "details": {
+      "dimensions": {
+        "width": 600,
+        "height": 600
+      },
+      "size": 24,
+      "description": "Experience the beauty and innocence of winter with this charming photograph of a small brown dog in the snow.",
+      "recommendations": [
+        "Winter Pet Photography",
+        "Animal Portraits"
+      ]
+    }
+  },
+  {
+    "name": "Snow-Covered Mountain in the Middle of a Cloud-Filled Sky",
+    "category": [
+      "Nature"
+    ],
+    "price": 14.99,
+    "currency": "USD",
+    "image": {
+      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/a_snow_covered_mountain_in_the_middle_of_a_cloud_filled_sky.jpg",
+      "alt": "Snow-Covered Mountain in the Middle of a Cloud-Filled Sky"
+    },
+    "bestseller": false,
+    "featured": false,
+    "details": {
+      "dimensions": {
+        "width": 600,
+        "height": 450
+      },
+      "size": 12,
+      "description": "Transport yourself to a world of majestic beauty with this breathtaking photograph of a snow-covered mountain.",
+      "recommendations": [
+        "Landscape Photography",
+        "Mountain Enthusiasts"
+      ]
+    }
+  },
+  {
+    "name": "Woman Jumping in the Air with a Red Bag",
+    "category": [
+      "People",
+      "Lifestyle"
+    ],
+    "price": 34.99,
+    "currency": "USD",
+    "image": {
+      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/a_woman_jumping_in_the_air_with_a_red_bag.jpg",
+      "alt": "Woman Jumping in the Air with a Red Bag"
+    },
+    "bestseller": true,
+    "featured": false,
+    "details": {
+      "dimensions": {
+        "width": 506,
+        "height": 600
+      },
+      "size": 36,
+      "description": "Embrace the spirit of freedom and joy with this dynamic photograph of a woman jumping in the air with a red bag.",
+      "recommendations": [
+        "Fashion and Style",
+        "Outdoor Adventure"
+      ]
+    }
+  },
+  {
+    "name": "Woman Taking a Picture with a Camera",
+    "category": [
+      "People"
+    ],
+    "price": 24.99,
+    "currency": "USD",
+    "image": {
+      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/a_woman_taking_a_picture_with_a_camera.jpg",
+      "alt": "Woman Taking a Picture with a Camera"
+    },
+    "bestseller": false,
+    "featured": false,
+    "details": {
+      "dimensions": {
+        "width": 600,
+        "height": 434
+      },
+      "size": 20,
+      "description": "Celebrate the art of photography with this captivating photograph of a woman capturing a moment with her camera.",
+      "recommendations": [
+        "Photography Enthusiasts",
+        "Artistic Moments"
+      ]
+    }
+  },
+  {
+    "name": "Woman Wearing Headphones and Smiling at the Camera",
+    "category": [
+      "People"
+    ],
+    "price": 19.99,
+    "currency": "USD",
+    "image": {
+      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/a_woman_wearing_headphones_and_smiling_at_the_camera.jpg",
+      "alt": "Woman Wearing Headphones and Smiling at the Camera"
+    },
+    "bestseller": true,
+    "featured": true,
+    "details": {
+      "dimensions": {
+        "width": 600,
+        "height": 400
+      },
+      "size": 16,
+      "description": "Experience the joy of music with this vibrant photograph of a woman wearing headphones and smiling at the camera.",
+      "recommendations": [
+        "Music Lovers",
+        "Happy Vibes"
+      ]
+    }
+  },
+  {
+    "name": "Wooden Table Topped with a Chemex Glass Coffee Maker and Cookies",
+    "category": [
+      "Coffee"
+    ],
+    "price": 39.99,
+    "currency": "USD",
+    "image": {
+      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/a_wooden_table_topped_with_a_chemex_glass_coffee_maker_and_cookies.jpg",
+      "alt": "Wooden Table Topped with a Chemex Glass Coffee Maker and Cookies"
+    },
+    "bestseller": false,
+    "featured": false,
+    "details": {
+      "dimensions": {
+        "width": 600,
+        "height": 600
+      },
+      "size": 32,
+      "description": "Elevate your coffee experience with this enticing photograph featuring a Chemex glass coffee maker and delectable cookies.",
+      "recommendations": [
+        "Coffee Enthusiasts",
+        "Café Ambiance"
+      ]
+    }
+  },
+  {
+    "name": "Animal Standing on Top of a Dry Grass Field",
+    "category": [
+      "Nature"
+    ],
+    "price": 29.99,
+    "currency": "USD",
+    "image": {
+      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/an_animal_standing_on_top_of_a_dry_grass_field.jpg",
+      "alt": "Animal Standing on Top of a Dry Grass Field"
+    },
+    "bestseller": false,
+    "featured": false,
+    "details": {
+      "dimensions": {
+        "width": 401,
+        "height": 600
+      },
+      "size": 32,
+      "description": "Celebrate the wonders of wildlife with this captivating photograph of an animal standing on a dry grass field.",
+      "recommendations": [
+        "Nature Lovers",
+        "Animal Photography"
+      ]
+    }
+  },
+  {
+    "name": "Open Book with a Pair of Glasses on Top of It",
+    "category": [
+      "People",
+      "Lifestyle"
+    ],
+    "price": 39.99,
+    "currency": "USD",
+    "image": {
+      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/an_open_book_with_a_pair_of_glasses_on_top_of_it.jpg",
+      "alt": "Open Book with a Pair of Glasses on Top of It"
+    },
+    "bestseller": false,
+    "featured": true,
+    "details": {
+      "dimensions": {
+        "width": 600,
+        "height": 475
+      },
+      "size": 44,
+      "description": "Embrace the joy of reading and knowledge with this captivating photograph of an open book accompanied by a pair of glasses.",
+      "recommendations": [
+        "Bookworms",
+        "Intellectual Pursuits"
+      ]
+    }
+  },
+  {
+    "name": "Father, Mother, and Child Lying on Bed, Feet Peeking from Under Blanket",
+    "category": [
+      "People",
+      "Family"
+    ],
+    "price": 44.99,
+    "currency": "USD",
+    "image": {
+      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/father_mother_and_child_lying_on_bed_feet_peeking_from_under_blanket.jpg",
+      "alt": "Father, Mother, and Child Lying on Bed, Feet Peeking from Under Blanket"
+    },
+    "bestseller": true,
+    "featured": false,
+    "details": {
+      "dimensions": {
+        "width": 600,
+        "height": 600
+      },
+      "size": 32,
+      "description": "Celebrate the warmth and love of a family with this heartwarming photograph of a father, mother, and child lying on a bed.",
+      "recommendations": [
+        "Family Moments",
+        "Cozy Home Decor"
+      ]
+    }
+  },
+  {
+    "name": "Person, Family Sitting in Front of and on Top of a Bed",
+    "category": [
+      "People",
+      "Family",
+      "Lifestyle"
+    ],
+    "price": 29.99,
+    "currency": "USD",
+    "image": {
+      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/person_family_sitting_in_front_of_and_on_top_of_a_bed.jpg",
+      "alt": "Person, Family Sitting in Front of and on Top of a Bed"
+    },
+    "bestseller": false,
+    "featured": true,
+    "details": {
+      "dimensions": {
+        "width": 400,
+        "height": 600
+      },
+      "size": 28,
+      "description": "Celebrate the joy of togetherness with this heartwarming photograph of a person and a family sitting in front of and on top of a bed.",
+      "recommendations": [
+        "Family Moments",
+        "Cozy Home Decor"
+      ]
+    }
+  },
+  {
+    "name": "Two Children Sitting in a Teepee Reading a Book",
+    "category": [
+      "People",
+      "Children/Kids",
+      "Lifestyle"
+    ],
+    "price": 24.99,
+    "currency": "USD",
+    "image": {
+      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/two_children_sitting_in_a_teepee_reading_a_book.jpg",
+      "alt": "Two Children Sitting in a Teepee Reading a Book"
+    },
+    "bestseller": false,
+    "featured": false,
+    "details": {
+      "dimensions": {
+        "width": 600,
+        "height": 338
+      },
+      "size": 24,
+      "description": "Ignite the imagination and love for reading with this enchanting photograph of two children sitting in a teepee and reading a book.",
+      "recommendations": [
+        "Children's Room Decor",
+        "Education and Learning"
+      ]
+    }
+  }
+]
