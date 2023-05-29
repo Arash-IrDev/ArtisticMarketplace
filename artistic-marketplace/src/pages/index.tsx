@@ -1,29 +1,38 @@
-// import React, { useState, useEffect } from 'react';
-// import ProductItem from '../components/ProductItem';
-// import FeaturedProduct from '../components/FeaturedProduct';
+import React, { useState, useEffect } from 'react';
+import ProductItem from '../components/ProductItem';
+import FeaturedProduct from '../components/FeaturedProduct';
+import { Product } from '../db/models/ProductType';
 
-// const IndexPage = () => {
-//   const [products, setProducts] = useState([]);
 
-//   useEffect(() => {
-//     fetch('/api/products')
-//       .then(response => response.json())
-//       .then(data => setProducts(data));
-//   }, []);
+const IndexPage = () => {
+  const [products, setProducts] = useState<Product[]>([]);
 
-//   const featuredProduct = products.find(product => product.featured);
-//   const otherProducts = products.filter(product => !product.featured);
+  useEffect(() => {
+    fetch('/api/products')
+      .then(response => response.json())
+      .then(data => {
+        console.log('Received products:', data);
+        setProducts(data.data);
+      })
+      .catch(error => {
+        console.error('Error fetching products:', error);
+        // FIXME: Optionally set an error state here to show an error message to the user
+      });
+  }, []);
 
-//   return (
-//     <div>
-//       <FeaturedProduct product={featuredProduct} />
-//       <div className="product-list">
-//         {otherProducts.map(product => (
-//           <ProductItem key={product._id} product={product} />
-//         ))}
-//       </div>
-//     </div>
-//   );
-// };
+  const featuredProduct = Array.isArray(products) ? products.find(product => product.featured) : undefined;
+  const otherProducts = Array.isArray(products) ? products.filter(product => !product.featured) : [];
 
-// export default IndexPage;
+  return (
+    <div>
+      <FeaturedProduct product={featuredProduct} />
+      <div className="product-list">
+        {otherProducts.map(product => (
+          <ProductItem key={product._id} product={product} />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default IndexPage;
