@@ -10,7 +10,7 @@ type ProductContextProps = {
     priceRanges: { range: string, min: number, max: number }[];
     selectedPriceRange: string | null;
     toggleCategory: (category: string) => void;
-    emptyFilters: (category: string) => void;
+    emptyFilters: () => void;
     selectPriceRange: (range: string) => void;
     getProductById: (id: string) => Product | undefined;
 };
