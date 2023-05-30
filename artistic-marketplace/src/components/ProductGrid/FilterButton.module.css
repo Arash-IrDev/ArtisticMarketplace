@@ -1,0 +1,44 @@
+.filterPanel {
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 45px;
+    left: 0px;
+    padding: 17px;
+    box-shadow: 0 2px 12px 0px #00000099;
+    z-index: 100;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+}
+
+.closeBtn:hover {
+    filter: brightness(0) invert(.6) sepia(1) saturate(100%) hue-rotate(-30deg);
+}
+
+.filterPanelButtons {
+    width: 100%;
+    padding: 10px;
+    Border: 3px solid black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: var(--bigger-regular-font-size);
+}
+
+.filterPanelButtons:hover {
+    color: orange;
+}
+
+.SaveButton {
+    background-color: black;
+    color: white;
+    font-weight: 400;
+}
+
+.ClearButton {
+    font-weight: 600;
+    background-color: white;
+}

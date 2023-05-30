@@ -10,6 +10,7 @@ import { Archivo } from 'next/font/google'
 import FilterButton from '../ProductGrid/FilterButton';
 import CategoryFilter from '../CategoryFilter';
 import PriceRangeFilter from '../PriceRangeFilter';
+import styles from './styles.module.css';
 
 const archivo = Archivo({ subsets: ['latin'] })
 
@@ -26,7 +27,7 @@ const Layout = () => {
                 <Header />
                 <FeaturedProduct product={featuredProduct} addProductToCart={addProductToCart} />
                 <hr />
-                <div className="row">
+                <div className={`row ${styles.filterBottonRow}`}>
                     <div className="col">
                         {/* <Breadcrumb /> */}
                     </div>

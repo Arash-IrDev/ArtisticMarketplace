@@ -1,7 +1,7 @@
 import React from 'react';
 import { Product } from '../../db/models/ProductType';
 import styles from './ProductItem.module.css';
-import { truncateString } from '../../helpers/stringHelpers';
+// import { truncateString } from '../../helpers/stringHelpers';
 
 type ProductItemProps = {
   product: Product,

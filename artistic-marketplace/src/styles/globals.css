@@ -64,6 +64,9 @@ button {
   border: 0px;
 }
 
+.handCursor {
+  cursor: pointer;
+}
 
 /* Hide default checkbox */
 .styled-checkbox {

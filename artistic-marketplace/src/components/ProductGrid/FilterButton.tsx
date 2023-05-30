@@ -4,29 +4,34 @@ import React, { useContext, useState } from 'react';
 import { ProductContext } from '../../contexts/ProductContext';
 import CategoryFilter from '../CategoryFilter';
 import PriceRangeFilter from '../PriceRangeFilter';
+import styles from './FilterButton.module.css';
 
 const FilterButton = () => {
     const [showFilter, setShowFilter] = useState(false);
-    const { categories, toggleCategory } = useContext(ProductContext);
+    const { emptyFilters } = useContext(ProductContext);
 
     const handleFilterClick = () => {
         setShowFilter(!showFilter);
     };
 
     const handleClearFilters = () => {
-        categories.forEach(category => toggleCategory(category));
+        emptyFilters();
     };
 
     return (
         <div>
-            <button onClick={handleFilterClick}>Filter</button>
+            <img className='handCursor' onClick={handleFilterClick} src="images/setting.svg" alt="Filters" />
             {showFilter && (
-                <div className="filter-panel">
-                    <button className="close-btn" onClick={handleFilterClick}>X</button>
+                <div className={styles.filterPanel}>
+                    <img className={`${styles.closeBtn} handCursor`} onClick={handleFilterClick} src="images/x.svg" alt="close" />
                     <CategoryFilter />
+                    <hr />
                     <PriceRangeFilter />
-                    <button onClick={handleClearFilters}>Clear</button>
-                    <button onClick={handleFilterClick}>Save</button>
+                    <hr />
+                    <div className='row'>
+                        <div className={`col-6`}><button className={`${styles.filterPanelButtons} ${styles.ClearButton}`} onClick={handleClearFilters}>Clear</button></div>
+                        <div className={`col-6`}><button className={`${styles.filterPanelButtons} ${styles.SaveButton} `} onClick={handleFilterClick}>Save</button></div>
+                    </div>
                 </div>
             )}
         </div>

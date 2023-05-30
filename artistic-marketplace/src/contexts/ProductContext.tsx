@@ -10,6 +10,7 @@ type ProductContextProps = {
     priceRanges: { range: string, min: number, max: number }[];
     selectedPriceRange: string | null;
     toggleCategory: (category: string) => void;
+    emptyFilters: (category: string) => void;
     selectPriceRange: (range: string) => void;
     getProductById: (id: string) => Product | undefined;
 };
@@ -23,6 +24,7 @@ export const ProductContext = createContext<ProductContextProps>({
     priceRanges: [],
     selectedPriceRange: null,
     toggleCategory: () => { },
+    emptyFilters: () => { },
     selectPriceRange: () => { },
     getProductById: () => undefined,
 });
@@ -48,6 +50,11 @@ export const ProductProvider: React.FC<ProductProviderProps> = ({ children }) =>
                 return [...prev, category];
             }
         });
+    };
+
+    const emptyFilters = () => {
+        setSelectedCategories([]);
+        setSelectedPriceRange('');
     };
 
     const selectPriceRange = (range: string) => {
@@ -89,7 +96,7 @@ export const ProductProvider: React.FC<ProductProviderProps> = ({ children }) =>
     }, [selectedCategories, selectedPriceRange]);
 
     return (
-        <ProductContext.Provider value={{ featuredProduct, allProducts, otherProducts, categories, selectedCategories, priceRanges, selectedPriceRange, toggleCategory, selectPriceRange, getProductById }}>
+        <ProductContext.Provider value={{ featuredProduct, allProducts, otherProducts, categories, selectedCategories, priceRanges, selectedPriceRange, toggleCategory, emptyFilters, selectPriceRange, getProductById }}>
             {children}
         </ProductContext.Provider>
     );
