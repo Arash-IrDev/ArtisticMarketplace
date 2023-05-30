@@ -19,32 +19,32 @@ const Layout = () => {
     };
 
     return (
-        <div className={archivo.className}>
-                    <div className="container">
-                        <Header />
-                        <FeaturedProduct product={featuredProduct} addProductToCart={addProductToCart} />
-                        <hr />
-                        <div className="row">
-                            <div className="col">
-                                {/* <Breadcrumb /> */}
-                            </div>
-                            <div className="col d-flex justify-content-end">
-                                {/* <SortButton /> */}
-                                {/* <FilterButton /> */}
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="col-3">
-                                <CategoryFilter />
-                                <hr />
-                                <PriceRangeFilter />
-                            </div>
-                            <div className="col-9">
-                                <ProductGrid products={otherProducts} addProductToCart={addProductToCart} currentPage={1} totalPages={5} onPageChange={page => console.log(page)} />
-                            </div>
-                        </div>
+        <div className={`${archivo.className} mb-5`}>
+            <div className="container">
+                <Header />
+                <FeaturedProduct product={featuredProduct} addProductToCart={addProductToCart} />
+                <hr />
+                <div className="row">
+                    <div className="col">
+                        {/* <Breadcrumb /> */}
+                    </div>
+                    <div className="col d-flex justify-content-end">
+                        {/* <SortButton /> */}
+                        {/* <FilterButton /> */}
                     </div>
                 </div>
+                <div className="row">
+                    <div className="col-3">
+                        <CategoryFilter />
+                        <hr />
+                        <PriceRangeFilter />
+                    </div>
+                    <div className="col-9">
+                        <ProductGrid products={otherProducts} addProductToCart={addProductToCart} currentPage={1} totalPages={5} onPageChange={page => console.log(page)} />
+                    </div>
+                </div>
+            </div>
+        </div>
     );
 };
 

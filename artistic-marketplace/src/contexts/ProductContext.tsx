@@ -1,10 +1,9 @@
-// ProductContext
-
 import React, { createContext, useState, useEffect, ReactNode } from 'react';
 import { Product } from '../db/models/ProductType';
 
 type ProductContextProps = {
     featuredProduct: Product | null;
+    allProducts: Product[]; // new state variable
     otherProducts: Product[];
     categories: string[];
     selectedCategories: string[];
@@ -12,10 +11,12 @@ type ProductContextProps = {
     selectedPriceRange: string | null;
     toggleCategory: (category: string) => void;
     selectPriceRange: (range: string) => void;
+    getProductById: (id: string) => Product | undefined;
 };
 
 export const ProductContext = createContext<ProductContextProps>({
     featuredProduct: null,
+    allProducts: [], // default value for allProducts
     otherProducts: [],
     categories: [],
     selectedCategories: [],
@@ -23,6 +24,7 @@ export const ProductContext = createContext<ProductContextProps>({
     selectedPriceRange: null,
     toggleCategory: () => { },
     selectPriceRange: () => { },
+    getProductById: () => undefined,
 });
 
 type ProductProviderProps = {
@@ -31,6 +33,7 @@ type ProductProviderProps = {
 
 export const ProductProvider: React.FC<ProductProviderProps> = ({ children }) => {
     const [featuredProduct, setFeaturedProduct] = useState<Product | null>(null);
+    const [allProducts, setAllProducts] = useState<Product[]>([]); // state for allProducts
     const [otherProducts, setOtherProducts] = useState<Product[]>([]);
     const [categories, setCategories] = useState<string[]>([]);
     const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
@@ -51,6 +54,10 @@ export const ProductProvider: React.FC<ProductProviderProps> = ({ children }) =>
         setSelectedPriceRange(range);
     };
 
+    const getProductById = (id: string) => {
+        return allProducts.find(product => product._id === id);
+    };
+
     useEffect(() => {
         fetch('/api/products')
             .then(response => response.json())
@@ -58,6 +65,7 @@ export const ProductProvider: React.FC<ProductProviderProps> = ({ children }) =>
 
                 const { products, categories, priceRanges } = data.data;
 
+                setAllProducts(products);
                 setCategories(categories);
                 setPriceRanges(priceRanges);
 
@@ -69,7 +77,7 @@ export const ProductProvider: React.FC<ProductProviderProps> = ({ children }) =>
                         return product.price >= min && product.price <= max;
                     });
 
-                const featured = products.find((product: Product) => product.featured);
+                const featured = allProducts.find((product: Product) => product.featured);
                 setFeaturedProduct(featured || null);
 
                 const others = filteredProducts.filter((product: Product) => !product.featured);
@@ -81,7 +89,7 @@ export const ProductProvider: React.FC<ProductProviderProps> = ({ children }) =>
     }, [selectedCategories, selectedPriceRange]);
 
     return (
-        <ProductContext.Provider value={{ featuredProduct, otherProducts, categories, selectedCategories, priceRanges, selectedPriceRange, toggleCategory, selectPriceRange }}>
+        <ProductContext.Provider value={{ featuredProduct, allProducts, otherProducts, categories, selectedCategories, priceRanges, selectedPriceRange, toggleCategory, selectPriceRange, getProductById }}>
             {children}
         </ProductContext.Provider>
     );
