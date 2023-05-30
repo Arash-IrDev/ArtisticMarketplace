@@ -1,0 +1,8 @@
+.productImage {
+    width: 100%;     /* Or set a fixed width */
+    height: 0;       /* Set this to be 0 initially */
+    padding-top: 120%; /* This will set the aspect ratio of the container. Change this as needed. */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

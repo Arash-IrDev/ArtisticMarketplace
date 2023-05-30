@@ -1,0 +1,45 @@
+/* Global Styles */
+:root {
+  --bigger-regular-font-size: 22px;
+}
+
+h1 {
+  font-size: 38px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: gray;
+}
+
+body {
+  font-size: 18px;
+}
+
+p {
+  font-size: var(--bigger-regular-font-size);
+  color: gray;
+}
+
+hr {
+    border-top: 3px solid gray;
+}
+
+.add-to-card {
+    width:100%;
+    background-color: black;
+    color: white;
+    padding: 7px 3px 3px 3px;
+    margin-bottom: 7px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: var(--bigger-regular-font-size);
+}

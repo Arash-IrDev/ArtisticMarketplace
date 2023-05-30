@@ -1,5 +1,6 @@
 import React from 'react';
 import { Product } from '../db/models/ProductType';
+import { truncateString } from '../helpers/stringHelpers';
 
 type FeaturedProductProps = {
   product: Product | null,
@@ -10,14 +11,15 @@ const FeaturedProduct: React.FC<FeaturedProductProps> = ({ product, addProductTo
   if (!product) return <p>Loading...</p>;
 
   return (
-    <div className="featured-product">
-      <img src={product.image.src} alt={product.image.alt} />
+    <div className="jumbotron">
+      <h2>{truncateString(product.name, 3)}</h2>
+      <button className="add-to-card" onClick={() => addProductToCart(product)}>Add to Cart</button>
+      <img src={product.image.src} alt={product.image.alt} className="img-fluid" />
+      <p className="lead">{product.details.description}</p>
       <div className="product-info">
-        <h2>{product.name}</h2>
         <p>{product.category.join(', ')}</p>
         <p>{product.price}</p>
       </div>
-      <button onClick={() => addProductToCart(product)}>Add to Cart</button>
     </div>
   );
 };
