@@ -16,7 +16,7 @@ export const PriceRangeFilter = () => {
 
     return (
         <div>
-            <h2>Price Range</h2>
+            <h3>Price Range</h3>
             {priceRanges.map(({ range }) => (
                 <div key={range} className='styled-checkbox py-2'>
                     <input

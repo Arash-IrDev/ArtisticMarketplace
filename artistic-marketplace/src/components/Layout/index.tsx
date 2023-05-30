@@ -1,13 +1,15 @@
+// Layout component
+
 import { useContext } from 'react';
 import { ProductContext } from '../../contexts/ProductContext';
 import Header from '../Header';
 import FeaturedProduct from '../FeaturedProduct';
 import ProductGrid from '../ProductGrid';
-import CategoryFilter from '../CategoryFilter';
-import PriceRangeFilter from '../PriceRangeFilter';
 import { Product } from '../../db/models/ProductType';
 import { Archivo } from 'next/font/google'
-
+import FilterButton from '../ProductGrid/FilterButton';
+import CategoryFilter from '../CategoryFilter';
+import PriceRangeFilter from '../PriceRangeFilter';
 
 const archivo = Archivo({ subsets: ['latin'] })
 
@@ -28,18 +30,20 @@ const Layout = () => {
                     <div className="col">
                         {/* <Breadcrumb /> */}
                     </div>
-                    <div className="col d-flex justify-content-end">
+                    <div className="col d-flex justify-content-end mb-3 d-block d-lg-none">
                         {/* <SortButton /> */}
-                        {/* <FilterButton /> */}
+                        <FilterButton />
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-3">
-                        <CategoryFilter />
-                        <hr />
-                        <PriceRangeFilter />
+                    <div className="col-lg-3">
+                        <div id="filterPanel" className="collapse d-lg-block">
+                            <CategoryFilter />
+                            <hr />
+                            <PriceRangeFilter />
+                        </div>
                     </div>
-                    <div className="col-9">
+                    <div className="col-lg-9">
                         <ProductGrid products={otherProducts} addProductToCart={addProductToCart} currentPage={1} totalPages={5} onPageChange={page => console.log(page)} />
                     </div>
                 </div>
