@@ -3,8 +3,10 @@ import { ProductContext } from '../../contexts/ProductContext';
 import Header from '../Header';
 import FeaturedProduct from '../FeaturedProduct';
 import ProductGrid from '../ProductGrid';
+import CategoryFilter from '../CategoryFilter';
 import { Product } from '../../db/models/ProductType';
 import { Archivo } from 'next/font/google'
+
 
 const archivo = Archivo({ subsets: ['latin'] })
 
@@ -32,7 +34,7 @@ const Layout = () => {
                         </div>
                         <div className="row">
                             <div className="col-3">
-                                {/* <CategoryFilter /> */}
+                                <CategoryFilter />
                                 <hr />
                                 {/* <PriceRangeFilter /> */}
                             </div>

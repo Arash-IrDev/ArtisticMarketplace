@@ -11,7 +11,20 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     case 'GET':
       try {
         const products = await Product.find({});
-        res.status(200).json({ success: true, data: products });
+
+        const categories = [...new Set(products.flatMap(p => p.category))];
+
+        // Calculate price ranges
+        const prices = products.map(p => p.price);
+        const maxPrice = Math.max(...prices);
+        const priceRanges = [
+          { range: 'Lower than $20', min: 0, max: 20 },
+          { range: '$20 - $100', min: 20, max: 100 },
+          { range: '$100 - $200', min: 100, max: 200 },
+          { range: 'More than $200', min: 200, max: maxPrice },
+        ];
+
+        res.status(200).json({ success: true, data: { products, categories, priceRanges } });
       } catch (error) {
         res.status(400).json({ success: false });
       }

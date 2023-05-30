@@ -10,14 +10,15 @@ type ProductItemProps = {
 
 const ProductItem: React.FC<ProductItemProps> = ({ product, addProductToCart }) => {
   return (
-    <div className="product-item">
-      {/* <img src={product.image.src} alt={product.image.alt} /> */}
+    <div className="productItem">
+      <div className={styles.imageHolder}>
       <div className={styles.productImage} style={{ backgroundImage: `url(${product.image.src})` }}></div>
       <button className="add-to-card" onClick={() => addProductToCart(product)}>Add to Cart</button>
+      </div>
       <div className="product-info">
         <h3 className="grayText">{product.category.join(', ')}</h3>
-        <h2>{truncateString(product.name, 3)}</h2>
-        <p className="biggestFontSize grayText">${product.price}</p>
+        <h2>{product.name}</h2>
+        <p className="biggestFontSize">${product.price}</p>
       </div>
       
     </div>
