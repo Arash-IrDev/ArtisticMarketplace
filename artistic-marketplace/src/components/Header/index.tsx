@@ -1,10 +1,8 @@
-import styles from './styles.module.css';
-
 const Header = () => {
     return (
-        <div className="p-2">
-            <nav className="navbar navbar-expand-lg navbar-light">
-                <div className="container-fluid">
+        <div className="my-4">
+            <nav className="navbar navbar-expand-lg navbar-light mb-3">
+                <div className="container-fluid p-0">
                     <a className="navbar-brand" href="#">
                         <img src="/images/logo.svg" alt="Bejamas Logo" />
                     </a>
@@ -13,7 +11,7 @@ const Header = () => {
                     </a>
                 </div>
             </nav>
-            <hr className={`${styles['navbar-separator']}`} />
+            <hr />
         </div>
     );
 };

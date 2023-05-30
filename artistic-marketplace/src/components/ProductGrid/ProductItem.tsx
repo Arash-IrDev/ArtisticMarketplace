@@ -15,9 +15,9 @@ const ProductItem: React.FC<ProductItemProps> = ({ product, addProductToCart }) 
       <div className={styles.productImage} style={{ backgroundImage: `url(${product.image.src})` }}></div>
       <button className="add-to-card" onClick={() => addProductToCart(product)}>Add to Cart</button>
       <div className="product-info">
-        <h3>{product.category.join(', ')}</h3>
+        <h3 className="grayText">{product.category.join(', ')}</h3>
         <h2>{truncateString(product.name, 3)}</h2>
-        <p>${product.price}</p>
+        <p className="biggestFontSize grayText">${product.price}</p>
       </div>
       
     </div>

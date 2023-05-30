@@ -12,7 +12,7 @@ const ProductSchema = new mongoose.Schema({
   bestseller: Boolean,
   featured: Boolean,
   details: {
-    dimmentions: {
+    dimensions: {
       width: Number,
       height: Number,
     },

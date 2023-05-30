@@ -21,9 +21,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         const product = await Product.create(req.body);
         res.status(201).json({ success: true, data: product });
       } catch (error) {
+        console.error('Error creating product:', error);
         res.status(400).json({ success: false, error: (error as Error).message });
       }
       break;
+
     default:
       res.status(400).json({ success: false });
       break;

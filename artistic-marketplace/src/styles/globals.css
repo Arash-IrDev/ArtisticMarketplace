@@ -1,6 +1,21 @@
 /* Global Styles */
 :root {
   --bigger-regular-font-size: 22px;
+  --biggest-regular-font-size: 24px;
+  --default-gray-text-color: #656565; 
+}
+
+.grayText,
+.grayText *{
+  color: var(--default-gray-text-color);
+}
+
+.biggerFontSize {
+  font-size: var(--bigger-regular-font-size);
+}
+
+.biggestFontSize {
+  font-size: var(--biggest-regular-font-size);
 }
 
 h1 {
@@ -16,16 +31,10 @@ h2 {
 h3 {
   font-size: 20px;
   font-weight: bold;
-  color: gray;
 }
 
 body {
   font-size: 18px;
-}
-
-p {
-  font-size: var(--bigger-regular-font-size);
-  color: gray;
 }
 
 hr {
@@ -42,4 +51,8 @@ hr {
     letter-spacing: 2px;
     font-weight: 400;
     font-size: var(--bigger-regular-font-size);
+}
+
+.jumbotron .add-to-card.desktop {
+  max-width: 270px;
 }

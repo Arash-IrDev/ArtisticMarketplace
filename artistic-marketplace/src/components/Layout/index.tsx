@@ -16,11 +16,9 @@ const Layout = () => {
     };
 
     return (
-        <html lang="en">
-            <body className={archivo.className}>
-                <div>
-                    <Header />
+        <div className={archivo.className}>
                     <div className="container">
+                        <Header />
                         <FeaturedProduct product={featuredProduct} addProductToCart={addProductToCart} />
                         <hr />
                         <div className="row">
@@ -44,8 +42,6 @@ const Layout = () => {
                         </div>
                     </div>
                 </div>
-            </body>
-        </html>
     );
 };
 

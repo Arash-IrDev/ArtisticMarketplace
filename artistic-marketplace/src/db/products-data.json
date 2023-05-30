@@ -1,32 +1,5 @@
 [
   {
-    "name": "Garden Family",
-    "category": [
-      "People",
-      "Family"
-    ],
-    "price": 39.99,
-    "currency": "USD",
-    "image": {
-      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/a_beautiful_picture_of_a_girl_with_her_mother_and_father_in_a_garden.jpg",
-      "alt": "Beautiful Picture of a Girl with Her Mother and Father in a Garden"
-    },
-    "bestseller": false,
-    "featured": false,
-    "details": {
-      "dimensions": {
-        "width": 600,
-        "height": 352
-      },
-      "size": 48,
-      "description": "Beautiful Picture of a Girl with Her Mother and Father in a Garden. Capture the love and joy of a family in this beautiful garden setting.",
-      "recommendations": [
-        "Family Portraits",
-        "Outdoor Photography"
-      ]
-    }
-  },
-  {
     "name": "Black & White Dog",
     "category": [
       "Nature",
@@ -50,33 +23,6 @@
       "recommendations": [
         "Animal Lovers",
         "Black and White Photography"
-      ]
-    }
-  },
-  {
-    "name": "Man & Child",
-    "category": [
-      "People",
-      "Family"
-    ],
-    "price": 34.99,
-    "currency": "USD",
-    "image": {
-      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/a_black_and_white_photo_of_a_man_holding_a_child.jpg",
-      "alt": "Black and White Photo of a Man Holding a Child"
-    },
-    "bestseller": false,
-    "featured": false,
-    "details": {
-      "dimensions": {
-        "width": 400,
-        "height": 600
-      },
-      "size": 24,
-      "description": "Black and White Photo of a Man Holding a Child. Embrace the tenderness of a father's love with this captivating black and white photograph.",
-      "recommendations": [
-        "Father's Day Gifts",
-        "Family Moments"
       ]
     }
   },
