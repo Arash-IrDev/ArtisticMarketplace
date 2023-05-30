@@ -1,6 +1,6 @@
 [
   {
-    "name": "Beautiful Picture of a Girl with Her Mother and Father in a Garden",
+    "name": "Garden Family",
     "category": [
       "People",
       "Family"
@@ -12,14 +12,14 @@
       "alt": "Beautiful Picture of a Girl with Her Mother and Father in a Garden"
     },
     "bestseller": false,
-    "featured": true,
+    "featured": false,
     "details": {
       "dimensions": {
         "width": 600,
         "height": 352
       },
       "size": 48,
-      "description": "Capture the love and joy of a family in this beautiful garden setting.",
+      "description": "Beautiful Picture of a Girl with Her Mother and Father in a Garden. Capture the love and joy of a family in this beautiful garden setting.",
       "recommendations": [
         "Family Portraits",
         "Outdoor Photography"
@@ -27,7 +27,7 @@
     }
   },
   {
-    "name": "Black and White Photo of a Dog in a Field",
+    "name": "Black & White Dog",
     "category": [
       "Nature",
       "Pets"
@@ -39,14 +39,14 @@
       "alt": "Black and White Photo of a Dog in a Field"
     },
     "bestseller": true,
-    "featured": true,
+    "featured": false,
     "details": {
       "dimensions": {
         "width": 600,
         "height": 600
       },
       "size": 48,
-      "description": "Add a touch of elegance to your space with this captivating black and white photograph of a dog in a field.",
+      "description": "Black and White Photo of a Dog in a Field. Add a touch of elegance to your space with this captivating black and white photograph of a dog in a field.",
       "recommendations": [
         "Animal Lovers",
         "Black and White Photography"
@@ -54,7 +54,7 @@
     }
   },
   {
-    "name": "Black and White Photo of a Man Holding a Child",
+    "name": "Man & Child",
     "category": [
       "People",
       "Family"
@@ -73,7 +73,7 @@
         "height": 600
       },
       "size": 24,
-      "description": "Embrace the tenderness of a father's love with this captivating black and white photograph.",
+      "description": "Black and White Photo of a Man Holding a Child. Embrace the tenderness of a father's love with this captivating black and white photograph.",
       "recommendations": [
         "Father's Day Gifts",
         "Family Moments"
@@ -81,7 +81,7 @@
     }
   },
   {
-    "name": "Breathtaking Photo of a Sea Dawn Landscape at Sunset",
+    "name": "Sea Dawn Landscape",
     "category": [
       "Nature"
     ],
@@ -92,14 +92,14 @@
       "alt": "Breathtaking Photo of a Sea Dawn Landscape at Sunset"
     },
     "bestseller": false,
-    "featured": true,
+    "featured": false,
     "details": {
       "dimensions": {
         "width": 570,
         "height": 600
       },
       "size": 32,
-      "description": "Bring the serenity of a sea dawn landscape into your space with this captivating photograph taken at sunset.",
+      "description": "Breathtaking Photo of a Sea Dawn Landscape at Sunset. Bring the serenity of a sea dawn landscape into your space with this captivating photograph taken at sunset.",
       "recommendations": [
         "Seascape Wall Art",
         "Nature Photography"
@@ -107,7 +107,7 @@
     }
   },
   {
-    "name": "Close-Up of a Poodle Dog Looking at the Camera",
+    "name": "Poodle Close-Up",
     "category": [
       "Pets"
     ],
@@ -118,14 +118,14 @@
       "alt": "Close-Up of a Poodle Dog Looking at the Camera"
     },
     "bestseller": true,
-    "featured": true,
+    "featured": false,
     "details": {
       "dimensions": {
         "width": 480,
         "height": 600
       },
       "size": 36,
-      "description": "Celebrate the charm and playful nature of poodles with this adorable close-up photograph.",
+      "description": "Close-Up of a Poodle Dog Looking at the Camera. Celebrate the charm and playful nature of poodles with this adorable close-up photograph.",
       "recommendations": [
         "Dog Lovers",
         "Animal Portraits"
@@ -133,7 +133,7 @@
     }
   },
   {
-    "name": "Couple of Kids Sitting in Front of a Book",
+    "name": "Kids with Book",
     "category": [
       "People",
       "Children/Kids"
@@ -152,7 +152,7 @@
         "height": 600
       },
       "size": 28,
-      "description": "Encourage a love for reading with this delightful photograph capturing the innocence of childhood.",
+      "description": "Couple of Kids Sitting in Front of a Book. Encourage a love for reading with this delightful photograph capturing the innocence of childhood.",
       "recommendations": [
         "Children's Room Decor",
         "Education and Learning"
@@ -160,7 +160,7 @@
     }
   },
   {
-    "name": "Couple of People Laying on the Ground",
+    "name": "Lying Couple",
     "category": [
       "People"
     ],
@@ -178,7 +178,7 @@
         "height": 600
       },
       "size": 44,
-      "description": "Capture the carefree and relaxed moments of life with this candid photograph of a couple enjoying the outdoors.",
+      "description": "Couple of People Laying on the Ground. Capture the carefree and relaxed moments of life with this candid photograph of a couple enjoying the outdoors.",
       "recommendations": [
         "Romantic Moments",
         "Outdoor Lifestyle"
@@ -186,7 +186,7 @@
     }
   },
   {
-    "name": "Guy and Lady Bouncing and Dancing on the Beach",
+    "name": "Beach Dancing",
     "category": [
       "People",
       "Lifestyle"
@@ -198,14 +198,14 @@
       "alt": "Guy and Lady Bouncing and Dancing on the Beach"
     },
     "bestseller": true,
-    "featured": true,
+    "featured": false,
     "details": {
       "dimensions": {
         "width": 600,
         "height": 411
       },
       "size": 44,
-      "description": "Embrace the joy of summer and beach vibes with this energetic and lively photograph.",
+      "description": "Guy and Lady Bouncing and Dancing on the Beach. Embrace the joy of summer and beach vibes with this energetic and lively photograph.",
       "recommendations": [
         "Beach Lifestyle",
         "Fun and Happiness"
@@ -213,7 +213,7 @@
     }
   },
   {
-    "name": "Lady and Guy Holding Babies",
+    "name": "Holding Babies",
     "category": [
       "People",
       "Family"
@@ -232,7 +232,7 @@
         "height": 400
       },
       "size": 28,
-      "description": "Celebrate the beauty of parenthood with this heartwarming photograph capturing the love and bond between a couple and their babies.",
+      "description": "Lady and Guy Holding Babies. Celebrate the beauty of parenthood with this heartwarming photograph capturing the love and bond between a couple and their babies.",
       "recommendations": [
         "Newborn Photography",
         "Family Moments"
@@ -240,7 +240,7 @@
     }
   },
   {
-    "name": "Little Boy and Little Girl Walking Down a Street",
+    "name": "Walking Siblings",
     "category": [
       "People",
       "Children/Kids"
@@ -259,7 +259,7 @@
         "height": 600
       },
       "size": 52,
-      "description": "Capture the innocence and curiosity of childhood with this charming photograph of a little boy and a little girl exploring the world together.",
+      "description": "Little Boy and Little Girl Walking Down a Street. Capture the innocence and curiosity of childhood with this charming photograph of a little boy and a little girl exploring the world together.",
       "recommendations": [
         "Children's Room Decor",
         "Family Moments"
@@ -267,7 +267,7 @@
     }
   },
   {
-    "name": "Man Holding a Small Brown and White Dog",
+    "name": "Man with Dog",
     "category": [
       "People",
       "Pets"
@@ -279,14 +279,14 @@
       "alt": "Man Holding a Small Brown and White Dog"
     },
     "bestseller": true,
-    "featured": true,
+    "featured": false,
     "details": {
       "dimensions": {
         "width": 400,
         "height": 600
       },
       "size": 32,
-      "description": "Celebrate the bond between humans and their furry friends with this heartwarming photograph of a man and his small dog.",
+      "description": "Man Holding a Small Brown and White Dog. Celebrate the bond between humans and their furry friends with this heartwarming photograph of a man and his small dog.",
       "recommendations": [
         "Pet Lovers",
         "Dog Portraits"
@@ -294,7 +294,7 @@
     }
   },
   {
-    "name": "Man Riding a Skateboard Down a Street at Night",
+    "name": "Night Skateboarding",
     "category": [
       "People",
       "Lifestyle"
@@ -306,14 +306,14 @@
       "alt": "Man Riding a Skateboard Down a Street at Night"
     },
     "bestseller": false,
-    "featured": true,
+    "featured": false,
     "details": {
       "dimensions": {
         "width": 600,
         "height": 600
       },
       "size": 32,
-      "description": "Embrace the thrill and excitement of the urban night scene with this dynamic photograph of a man skateboarding.",
+      "description": "Man Riding a Skateboard Down a Street at Night. Embrace the thrill and excitement of the urban night scene with this dynamic photograph of a man skateboarding.",
       "recommendations": [
         "Urban Lifestyle",
         "Skateboarding Enthusiasts"
@@ -321,7 +321,7 @@
     }
   },
   {
-    "name": "Man Taking a Picture of Himself with a Camera",
+    "name": "Selfie with Camera",
     "category": [
       "People"
     ],
@@ -339,7 +339,7 @@
         "height": 600
       },
       "size": 36,
-      "description": "Celebrate the art of self-expression with this captivating photograph of a man taking a picture of himself.",
+      "description": "Man Taking a Picture of Himself with a Camera. Celebrate the art of self-expression with this captivating photograph of a man taking a picture of himself.",
       "recommendations": [
         "Photography Enthusiasts",
         "Self-Portraits"
@@ -347,7 +347,7 @@
     }
   },
   {
-    "name": "Person Laying on a Bed Reading a Book",
+    "name": "Bedtime Reading",
     "category": [
       "People",
       "Lifestyle"
@@ -359,14 +359,14 @@
       "alt": "Person Laying on a Bed Reading a Book"
     },
     "bestseller": false,
-    "featured": true,
+    "featured": false,
     "details": {
       "dimensions": {
         "width": 600,
         "height": 600
       },
       "size": 52,
-      "description": "Create a cozy and relaxed ambiance with this peaceful photograph of a person enjoying a book on a bed.",
+      "description": "Person Laying on a Bed Reading a Book. Create a cozy and relaxed ambiance with this peaceful photograph of a person enjoying a book on a bed.",
       "recommendations": [
         "Cozy Bedroom Decor",
         "Bookworms"
@@ -374,7 +374,7 @@
     }
   },
   {
-    "name": "Pitcher of Coffee and Two Cookies on a Table",
+    "name": "Coffee & Cookies",
     "category": [
       "Coffee"
     ],
@@ -385,14 +385,14 @@
       "alt": "Pitcher of Coffee and Two Cookies on a Table"
     },
     "bestseller": true,
-    "featured": true,
+    "featured": false,
     "details": {
       "dimensions": {
         "width": 600,
         "height": 600
       },
       "size": 56,
-      "description": "Savor the aroma and warmth of coffee with this inviting photograph of a pitcher of coffee and delicious cookies on a table.",
+      "description": "Pitcher of Coffee and Two Cookies on a Table. Savor the aroma and warmth of coffee with this inviting photograph of a pitcher of coffee and delicious cookies on a table.",
       "recommendations": [
         "Coffee Lovers",
         "Food and Beverage Photography"
@@ -400,7 +400,7 @@
     }
   },
   {
-    "name": "Rice Field with a House in the Middle of It",
+    "name": "Rice Field House",
     "category": [
       "Nature"
     ],
@@ -418,7 +418,7 @@
         "height": 600
       },
       "size": 56,
-      "description": "Immerse yourself in the beauty and tranquility of nature with this serene photograph of a rice field and a house.",
+      "description": "Rice Field with a House in the Middle of It. Immerse yourself in the beauty and tranquility of nature with this serene photograph of a rice field and a house.",
       "recommendations": [
         "Landscape Art",
         "Rural Sceneries"
@@ -426,7 +426,7 @@
     }
   },
   {
-    "name": "Small Brown Dog Standing in the Snow",
+    "name": "Snow Dog",
     "category": [
       "Pets"
     ],
@@ -444,7 +444,7 @@
         "height": 600
       },
       "size": 24,
-      "description": "Experience the beauty and innocence of winter with this charming photograph of a small brown dog in the snow.",
+      "description": "Small Brown Dog Standing in the Snow. Experience the beauty and innocence of winter with this charming photograph of a small brown dog in the snow.",
       "recommendations": [
         "Winter Pet Photography",
         "Animal Portraits"
@@ -452,7 +452,7 @@
     }
   },
   {
-    "name": "Snow-Covered Mountain in the Middle of a Cloud-Filled Sky",
+    "name": "Mountain Sky",
     "category": [
       "Nature"
     ],
@@ -470,7 +470,7 @@
         "height": 450
       },
       "size": 12,
-      "description": "Transport yourself to a world of majestic beauty with this breathtaking photograph of a snow-covered mountain.",
+      "description": "Snow-Covered Mountain in the Middle of a Cloud-Filled Sky. Transport yourself to a world of majestic beauty with this breathtaking photograph of a snow-covered mountain.",
       "recommendations": [
         "Landscape Photography",
         "Mountain Enthusiasts"
@@ -478,7 +478,7 @@
     }
   },
   {
-    "name": "Woman Jumping in the Air with a Red Bag",
+    "name": "Jumping Woman",
     "category": [
       "People",
       "Lifestyle"
@@ -497,7 +497,7 @@
         "height": 600
       },
       "size": 36,
-      "description": "Embrace the spirit of freedom and joy with this dynamic photograph of a woman jumping in the air with a red bag.",
+      "description": "Woman Jumping in the Air with a Red Bag. Embrace the spirit of freedom and joy with this dynamic photograph of a woman jumping in the air with a red bag.",
       "recommendations": [
         "Fashion and Style",
         "Outdoor Adventure"
@@ -505,7 +505,7 @@
     }
   },
   {
-    "name": "Woman Taking a Picture with a Camera",
+    "name": "Woman with Camera",
     "category": [
       "People"
     ],
@@ -523,7 +523,7 @@
         "height": 434
       },
       "size": 20,
-      "description": "Celebrate the art of photography with this captivating photograph of a woman capturing a moment with her camera.",
+      "description": "Woman Taking a Picture with a Camera. Celebrate the art of photography with this captivating photograph of a woman capturing a moment with her camera.",
       "recommendations": [
         "Photography Enthusiasts",
         "Artistic Moments"
@@ -531,7 +531,7 @@
     }
   },
   {
-    "name": "Woman Wearing Headphones and Smiling at the Camera",
+    "name": "Headphones Smile",
     "category": [
       "People"
     ],
@@ -549,7 +549,7 @@
         "height": 400
       },
       "size": 16,
-      "description": "Experience the joy of music with this vibrant photograph of a woman wearing headphones and smiling at the camera.",
+      "description": "Woman Wearing Headphones and Smiling at the Camera. Experience the joy of music with this vibrant photograph of a woman wearing headphones and smiling at the camera.",
       "recommendations": [
         "Music Lovers",
         "Happy Vibes"
@@ -557,7 +557,7 @@
     }
   },
   {
-    "name": "Wooden Table Topped with a Chemex Glass Coffee Maker and Cookies",
+    "name": "Chemex Coffee Table",
     "category": [
       "Coffee"
     ],
@@ -575,7 +575,7 @@
         "height": 600
       },
       "size": 32,
-      "description": "Elevate your coffee experience with this enticing photograph featuring a Chemex glass coffee maker and delectable cookies.",
+      "description": "Wooden Table Topped with a Chemex Glass Coffee Maker and Cookies. Elevate your coffee experience with this enticing photograph featuring a Chemex glass coffee maker and delectable cookies.",
       "recommendations": [
         "Coffee Enthusiasts",
         "Café Ambiance"
@@ -583,7 +583,7 @@
     }
   },
   {
-    "name": "Animal Standing on Top of a Dry Grass Field",
+    "name": "Dry Grass Animal",
     "category": [
       "Nature"
     ],
@@ -601,7 +601,7 @@
         "height": 600
       },
       "size": 32,
-      "description": "Celebrate the wonders of wildlife with this captivating photograph of an animal standing on a dry grass field.",
+      "description": "Animal Standing on Top of a Dry Grass Field. Celebrate the wonders of wildlife with this captivating photograph of an animal standing on a dry grass field.",
       "recommendations": [
         "Nature Lovers",
         "Animal Photography"
@@ -609,7 +609,7 @@
     }
   },
   {
-    "name": "Open Book with a Pair of Glasses on Top of It",
+    "name": "Glasses on Book",
     "category": [
       "People",
       "Lifestyle"
@@ -621,14 +621,14 @@
       "alt": "Open Book with a Pair of Glasses on Top of It"
     },
     "bestseller": false,
-    "featured": true,
+    "featured": false,
     "details": {
       "dimensions": {
         "width": 600,
         "height": 475
       },
       "size": 44,
-      "description": "Embrace the joy of reading and knowledge with this captivating photograph of an open book accompanied by a pair of glasses.",
+      "description": "Open Book with a Pair of Glasses on Top of It. Embrace the joy of reading and knowledge with this captivating photograph of an open book accompanied by a pair of glasses.",
       "recommendations": [
         "Bookworms",
         "Intellectual Pursuits"
@@ -636,7 +636,7 @@
     }
   },
   {
-    "name": "Father, Mother, and Child Lying on Bed, Feet Peeking from Under Blanket",
+    "name": "Bed Family Feet",
     "category": [
       "People",
       "Family"
@@ -655,7 +655,7 @@
         "height": 600
       },
       "size": 32,
-      "description": "Celebrate the warmth and love of a family with this heartwarming photograph of a father, mother, and child lying on a bed.",
+      "description": "Father, Mother, and Child Lying on Bed, Feet Peeking from Under Blanket. Celebrate the warmth and love of a family with this heartwarming photograph of a father, mother, and child lying on a bed.",
       "recommendations": [
         "Family Moments",
         "Cozy Home Decor"
@@ -663,7 +663,7 @@
     }
   },
   {
-    "name": "Person, Family Sitting in Front of and on Top of a Bed",
+    "name": "Family on Bed",
     "category": [
       "People",
       "Family",
@@ -673,17 +673,17 @@
     "currency": "USD",
     "image": {
       "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/person_family_sitting_in_front_of_and_on_top_of_a_bed.jpg",
-      "alt": "Person, Family Sitting in Front of and on Top of a Bed"
+      "alt": "Family Sitting in Front of and on Top of a Bed"
     },
     "bestseller": false,
-    "featured": true,
+    "featured": false,
     "details": {
       "dimensions": {
         "width": 400,
         "height": 600
       },
       "size": 28,
-      "description": "Celebrate the joy of togetherness with this heartwarming photograph of a person and a family sitting in front of and on top of a bed.",
+      "description": "Family Sitting in Front of and on Top of a Bed. Celebrate the joy of togetherness with this heartwarming photograph of a person and a family sitting in front of and on top of a bed.",
       "recommendations": [
         "Family Moments",
         "Cozy Home Decor"
@@ -691,7 +691,7 @@
     }
   },
   {
-    "name": "Two Children Sitting in a Teepee Reading a Book",
+    "name": "Teepee Reading",
     "category": [
       "People",
       "Children/Kids",
@@ -711,7 +711,7 @@
         "height": 338
       },
       "size": 24,
-      "description": "Ignite the imagination and love for reading with this enchanting photograph of two children sitting in a teepee and reading a book.",
+      "description": "Two Children Sitting in a Teepee Reading a Book. Ignite the imagination and love for reading with this enchanting photograph of two children sitting in a teepee and reading a book.",
       "recommendations": [
         "Children's Room Decor",
         "Education and Learning"
