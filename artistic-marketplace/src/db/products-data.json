@@ -2,7 +2,6 @@
   {
     "name": "Black & White Dog",
     "category": [
-      "Nature",
       "Pets"
     ],
     "price": 29.99,
@@ -82,7 +81,7 @@
     "name": "Kids with Book",
     "category": [
       "People",
-      "Children/Kids"
+      "Kids"
     ],
     "price": 24.99,
     "currency": "USD",
@@ -189,7 +188,7 @@
     "name": "Walking Siblings",
     "category": [
       "People",
-      "Children/Kids"
+      "Kids"
     ],
     "price": 44.99,
     "currency": "USD",
@@ -295,7 +294,6 @@
   {
     "name": "Bedtime Reading",
     "category": [
-      "People",
       "Lifestyle"
     ],
     "price": 49.99,
@@ -557,7 +555,6 @@
   {
     "name": "Glasses on Book",
     "category": [
-      "People",
       "Lifestyle"
     ],
     "price": 39.99,
@@ -584,7 +581,6 @@
   {
     "name": "Bed Family Feet",
     "category": [
-      "People",
       "Family"
     ],
     "price": 44.99,
@@ -640,8 +636,7 @@
     "name": "Teepee Reading",
     "category": [
       "People",
-      "Children/Kids",
-      "Lifestyle"
+      "Kids"
     ],
     "price": 24.99,
     "currency": "USD",

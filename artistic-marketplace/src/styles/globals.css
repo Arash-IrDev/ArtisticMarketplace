@@ -73,7 +73,8 @@ button {
   align-items: center;
 }
 
-.styled-checkbox input[type="checkbox"] {
+.styled-checkbox input[type="checkbox"],
+.styled-checkbox input[type="radio"] {
   display: none;
 }
 
@@ -86,6 +87,7 @@ button {
   height: 23px;
   /* adjust size here */
   width: 23px;
+  min-width: 23px;
   /* adjust size here */
   background-color: white;
   border: 2px solid black;

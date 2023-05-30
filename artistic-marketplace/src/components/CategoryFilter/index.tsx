@@ -1,3 +1,5 @@
+// CategoryFilter component
+
 import React, { useContext } from 'react';
 import { ProductContext } from '../../contexts/ProductContext';
 import styles from './styles.module.css';

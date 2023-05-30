@@ -17,12 +17,24 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         // Calculate price ranges
         const prices = products.map(p => p.price);
         const maxPrice = Math.max(...prices);
-        const priceRanges = [
-          { range: 'Lower than $20', min: 0, max: 20 },
-          { range: '$20 - $100', min: 20, max: 100 },
-          { range: '$100 - $200', min: 100, max: 200 },
-          { range: 'More than $200', min: 200, max: maxPrice },
-        ];
+        const minPrice = Math.min(...prices);
+        const rangeSize = Math.ceil((maxPrice - minPrice) / 4);
+        const priceRanges = [];
+        for (let i = 0; i < 4; i++) {
+          let min = minPrice + i * rangeSize;
+          let max = minPrice + (i + 1) * rangeSize;
+          min = Number(min.toFixed(2));
+          max = Number(max.toFixed(2));
+          let range;
+          if (i === 0) {
+            range = `Lower than $${max}`;
+          } else if (i === 3) {
+            range = `More than $${min}`;
+          } else {
+            range = `$${min} - $${max}`;
+          }
+          priceRanges.push({ range, min, max });
+        }
 
         res.status(200).json({ success: true, data: { products, categories, priceRanges } });
       } catch (error) {

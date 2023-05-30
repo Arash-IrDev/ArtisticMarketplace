@@ -4,6 +4,7 @@ import Header from '../Header';
 import FeaturedProduct from '../FeaturedProduct';
 import ProductGrid from '../ProductGrid';
 import CategoryFilter from '../CategoryFilter';
+import PriceRangeFilter from '../PriceRangeFilter';
 import { Product } from '../../db/models/ProductType';
 import { Archivo } from 'next/font/google'
 
@@ -36,7 +37,7 @@ const Layout = () => {
                             <div className="col-3">
                                 <CategoryFilter />
                                 <hr />
-                                {/* <PriceRangeFilter /> */}
+                                <PriceRangeFilter />
                             </div>
                             <div className="col-9">
                                 <ProductGrid products={otherProducts} addProductToCart={addProductToCart} currentPage={1} totalPages={5} onPageChange={page => console.log(page)} />
