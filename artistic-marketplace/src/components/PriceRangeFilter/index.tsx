@@ -1,14 +1,17 @@
-// PriceRangeFilter component
-
 import React, { useContext } from 'react';
 import { ProductContext } from '../../contexts/ProductContext';
 import styles from './styles.module.css';
 
 export const PriceRangeFilter = () => {
-    const { priceRanges, selectPriceRange } = useContext(ProductContext);
+    const { priceRanges, selectedPriceRange, selectPriceRange } = useContext(ProductContext);
 
     const handlePriceRangeChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        selectPriceRange(event.target.value);
+        const newValue = event.target.value;
+        if (newValue === selectedPriceRange) {
+            selectPriceRange(''); // Unselect the range if the same checkbox is clicked
+        } else {
+            selectPriceRange(newValue);
+        }
     };
 
     return (
@@ -17,10 +20,11 @@ export const PriceRangeFilter = () => {
             {priceRanges.map(({ range }) => (
                 <div key={range} className='styled-checkbox py-2'>
                     <input
-                        type="radio"
+                        type="checkbox"
                         id={`price-range-${range}`}
                         name="priceRange"
                         value={range}
+                        checked={range === selectedPriceRange}
                         onChange={handlePriceRangeChange}
                     />
                     <span onClick={(e) => {

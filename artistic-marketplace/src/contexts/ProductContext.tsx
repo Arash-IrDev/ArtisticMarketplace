@@ -77,7 +77,7 @@ export const ProductProvider: React.FC<ProductProviderProps> = ({ children }) =>
                         return product.price >= min && product.price <= max;
                     });
 
-                const featured = allProducts.find((product: Product) => product.featured);
+                const featured = products.find((product: Product) => product.featured);
                 setFeaturedProduct(featured || null);
 
                 const others = filteredProducts.filter((product: Product) => !product.featured);
