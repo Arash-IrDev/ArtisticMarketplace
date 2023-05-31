@@ -34,7 +34,12 @@ const CartDropdown: React.FC<CartDropdownProps> = ({ onClose }) => {
                     </div>
                 </div>
             ))}
-            <button className={styles.clearButton} onClick={() => clearCart()}>Clear Cart</button>
+            {cartItems.length > 0 && (
+                <button className={styles.clearButton} onClick={() => clearCart()}>Clear Cart</button>
+            )}
+            {cartItems.length < 1 && (
+                <p className='text-center'>No product in the cart yet!</p>
+            )}
         </div>
     );
 };
