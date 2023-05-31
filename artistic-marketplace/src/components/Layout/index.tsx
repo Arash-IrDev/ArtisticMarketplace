@@ -15,7 +15,7 @@ import styles from './styles.module.css';
 const archivo = Archivo({ subsets: ['latin'] })
 
 const Layout = () => {
-    const { featuredProduct, otherProducts } = useContext(ProductContext);
+    const { featuredProduct, otherProducts, currentPage, changePage, totalProductPages } = useContext(ProductContext);
 
     const addProductToCart = (product: Product) => {
         console.log('Add to cart clicked:', product);
@@ -45,7 +45,7 @@ const Layout = () => {
                         </div>
                     </div>
                     <div className="col-lg-9">
-                        <ProductGrid products={otherProducts} addProductToCart={addProductToCart} currentPage={1} totalPages={5} onPageChange={page => console.log(page)} />
+                        <ProductGrid products={otherProducts} addProductToCart={addProductToCart} currentPage={currentPage} totalPages={totalProductPages} onPageChange={changePage} />
                     </div>
                 </div>
             </div>

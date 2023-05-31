@@ -3,7 +3,7 @@ import { Product } from '../db/models/ProductType';
 
 type ProductContextProps = {
     featuredProduct: Product | null;
-    allProducts: Product[]; // new state variable
+    allProducts: Product[];
     otherProducts: Product[];
     categories: string[];
     selectedCategories: string[];
@@ -13,11 +13,14 @@ type ProductContextProps = {
     emptyFilters: () => void;
     selectPriceRange: (range: string) => void;
     getProductById: (id: string) => Product | undefined;
+    currentPage: number;
+    changePage: (page: number) => void;
+    totalProductPages: number;
 };
 
 export const ProductContext = createContext<ProductContextProps>({
     featuredProduct: null,
-    allProducts: [], // default value for allProducts
+    allProducts: [],
     otherProducts: [],
     categories: [],
     selectedCategories: [],
@@ -27,6 +30,9 @@ export const ProductContext = createContext<ProductContextProps>({
     emptyFilters: () => { },
     selectPriceRange: () => { },
     getProductById: () => undefined,
+    currentPage: 1,
+    changePage: () => { },
+    totalProductPages: 1,
 });
 
 type ProductProviderProps = {
@@ -41,6 +47,12 @@ export const ProductProvider: React.FC<ProductProviderProps> = ({ children }) =>
     const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
     const [priceRanges, setPriceRanges] = useState<{ range: string, min: number, max: number }[]>([]);
     const [selectedPriceRange, setSelectedPriceRange] = useState<string | null>(null);
+    const [currentPage, setCurrentPage] = useState<number>(1);
+    const [productsPerPage, setProductsPerPage] = useState<number>(6);
+    const [totalProductPages, setTotalProductPages] = useState <number>(1);
+
+    const changePage = (page: number) => setCurrentPage(page);
+    const setPerPage = (perPage: number) => setProductsPerPage(perPage);
 
     const toggleCategory = (category: string) => {
         setSelectedCategories(prev => {
@@ -50,6 +62,7 @@ export const ProductProvider: React.FC<ProductProviderProps> = ({ children }) =>
                 return [...prev, category];
             }
         });
+        setCurrentPage(1);
     };
 
     const emptyFilters = () => {
@@ -59,11 +72,16 @@ export const ProductProvider: React.FC<ProductProviderProps> = ({ children }) =>
 
     const selectPriceRange = (range: string) => {
         setSelectedPriceRange(range);
+        setCurrentPage(1);
     };
 
     const getProductById = (id: string) => {
         return allProducts.find(product => product._id === id);
     };
+
+    const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
+
+    // const changePage = (page: number) => setCurrentPage(page);
 
     useEffect(() => {
         fetch('/api/products')
@@ -76,27 +94,40 @@ export const ProductProvider: React.FC<ProductProviderProps> = ({ children }) =>
                 setCategories(categories);
                 setPriceRanges(priceRanges);
 
-                const filteredProducts = products
-                    .filter((product: Product) => selectedCategories.length === 0 || product.category.some(cat => selectedCategories.includes(cat)))
-                    .filter((product: Product) => {
-                        if (!selectedPriceRange) return true;
-                        const { min, max } = priceRanges.find((r: { range: string, min: number, max: number }) => r.range === selectedPriceRange) || {};
-                        return product.price >= min && product.price <= max;
-                    });
-
                 const featured = products.find((product: Product) => product.featured);
                 setFeaturedProduct(featured || null);
-
-                const others = filteredProducts.filter((product: Product) => !product.featured);
-                setOtherProducts(others);
             })
             .catch(error => {
                 console.error('Error fetching products:', error);
             });
-    }, [selectedCategories, selectedPriceRange]);
+    }, []);
+
+    useEffect(() => {
+        const filtered = allProducts
+            .filter((product: Product) => selectedCategories.length === 0 || product.category.some(cat => selectedCategories.includes(cat)))
+            .filter((product: Product) => {
+                if (!selectedPriceRange) return true;
+                const { min = 0, max = Number.POSITIVE_INFINITY } = priceRanges.find((r: { range: string, min: number, max: number }) => r.range === selectedPriceRange) || {};
+                return product.price >= min && product.price <= max;
+            });
+
+        setFilteredProducts(filtered);
+
+    }, [allProducts, selectedCategories, selectedPriceRange]);
+
+    useEffect(() => {
+        const others = filteredProducts.filter((product: Product) => !product.featured);
+        // calculate total pages for the filtered products
+        setTotalProductPages(Math.ceil(others.length / productsPerPage));
+        // slice the filtered products for current page
+        const startIndex = (currentPage - 1) * productsPerPage;
+        const endIndex = startIndex + productsPerPage;
+        setOtherProducts(others.slice(startIndex, endIndex));
+
+    }, [filteredProducts, currentPage, productsPerPage]);
 
     return (
-        <ProductContext.Provider value={{ featuredProduct, allProducts, otherProducts, categories, selectedCategories, priceRanges, selectedPriceRange, toggleCategory, emptyFilters, selectPriceRange, getProductById }}>
+        <ProductContext.Provider value={{ featuredProduct, allProducts, otherProducts, categories, selectedCategories, priceRanges, selectedPriceRange, toggleCategory, emptyFilters, selectPriceRange, getProductById, currentPage, changePage, totalProductPages }}>
             {children}
         </ProductContext.Provider>
     );
