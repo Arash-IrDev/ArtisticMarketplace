@@ -16,6 +16,8 @@ type ProductContextProps = {
     currentPage: number;
     changePage: (page: number) => void;
     totalProductPages: number;
+    sorting: string;
+    selectSorting: (sort: string) => void;
 };
 
 export const ProductContext = createContext<ProductContextProps>({
@@ -33,6 +35,8 @@ export const ProductContext = createContext<ProductContextProps>({
     currentPage: 1,
     changePage: () => { },
     totalProductPages: 1,
+    sorting: 'priceLowHigh',
+    selectSorting: () => { },
 });
 
 type ProductProviderProps = {
@@ -50,6 +54,12 @@ export const ProductProvider: React.FC<ProductProviderProps> = ({ children }) =>
     const [currentPage, setCurrentPage] = useState<number>(1);
     const [productsPerPage, setProductsPerPage] = useState<number>(6);
     const [totalProductPages, setTotalProductPages] = useState <number>(1);
+    const [sorting, setSorting] = useState<string>('priceLowHigh');
+
+    // Function to handle changes to sorting
+    const selectSorting = (sort: string) => {
+        setSorting(sort);
+    };
 
     const changePage = (page: number) => setCurrentPage(page);
     const setPerPage = (perPage: number) => setProductsPerPage(perPage);
@@ -127,7 +137,7 @@ export const ProductProvider: React.FC<ProductProviderProps> = ({ children }) =>
     }, [filteredProducts, currentPage, productsPerPage]);
 
     return (
-        <ProductContext.Provider value={{ featuredProduct, allProducts, otherProducts, categories, selectedCategories, priceRanges, selectedPriceRange, toggleCategory, emptyFilters, selectPriceRange, getProductById, currentPage, changePage, totalProductPages }}>
+        <ProductContext.Provider value={{ featuredProduct, allProducts, otherProducts, categories, selectedCategories, priceRanges, selectedPriceRange, toggleCategory, emptyFilters, selectPriceRange, getProductById, currentPage, changePage, totalProductPages, sorting, selectSorting }}>
             {children}
         </ProductContext.Provider>
     );

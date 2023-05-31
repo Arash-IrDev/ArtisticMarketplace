@@ -12,6 +12,7 @@ import CategoryFilter from '../CategoryFilter';
 import PriceRangeFilter from '../PriceRangeFilter';
 import styles from './styles.module.css';
 import Breadcrumb from '../ProductGrid/Breadcrumb';
+import SortSelect from '../ProductGrid/SortSelect';
 
 const archivo = Archivo({ subsets: ['latin'] })
 
@@ -32,9 +33,11 @@ const Layout = () => {
                     <div className="col">
                         <Breadcrumb />
                     </div>
-                    <div className="col d-flex justify-content-end mb-3 d-block d-lg-none">
-                        {/* <SortButton /> */}
+                    <div className="col d-flex justify-content-end mb-3">
+                        <SortSelect />
+                        <div className='d-block d-lg-none'>
                         <FilterButton />
+                        </div>
                     </div>
                 </div>
                 <div className="row">

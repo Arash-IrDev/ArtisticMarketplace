@@ -1,0 +1,36 @@
+.sortContainer {
+    display: flex;
+    align-items: center;
+}
+
+.sortText {
+    color: grey;
+    margin: 0 3px;
+}
+
+.sortSelect {
+    border: none;
+    background: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 5px 32px 5px 5px;
+    background-image: url(/images/down_arrow.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 32px;
+    outline: none;
+    border: 2px solid transparent;
+}
+
+.sortSelect::-ms-expand {
+    display: none;
+}
+
+.sortSelect option {
+    border-radius: 0;
+}
+
+.sortSelect:hover {
+    border: 2px solid gray;
+}
