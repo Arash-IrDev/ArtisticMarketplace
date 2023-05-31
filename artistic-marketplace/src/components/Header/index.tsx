@@ -13,7 +13,7 @@ const Header = () => {
         setShowCartDropdown(!showCartDropdown);
     };
 
-    const totalItemsInCart = cartItems.reduce((total, item) => total + cartItems.length, 0);
+    const totalItemsInCart = cartItems.length;
 
     return (
         <div className="my-4">
