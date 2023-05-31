@@ -1,0 +1,37 @@
+.pageItem {
+    cursor: pointer;
+    color: grey;
+    font-weight: 600;
+    font-size: var(--biggest-regular-font-size);
+}
+
+.pageItem.active,
+.pageItem.active:hover {
+    color: black;
+    cursor: inherit;
+    font-weight: 800;
+}
+
+.pageItem.disabled {
+    pointer-events: none;
+    color: grey;
+}
+
+.pageItem:hover {
+    color: orange;
+}
+
+.pagination {
+    justify-content: center;
+    list-style: none;
+}
+
+.pagination li {
+    display: inline-block;
+    margin: 8px;
+}
+
+.pageLink {
+    border: none;
+    background: none;
+}
