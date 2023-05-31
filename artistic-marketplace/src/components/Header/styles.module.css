@@ -1,0 +1,16 @@
+.cartButton>img:hover {
+    filter: brightness(0) invert(0.4);
+}
+
+.cartCountBadge {
+    position: absolute;
+    top: 5px;
+    right: -7px;
+    padding: 0px 6px;
+    background-color: black;
+    color: #fff;
+    font-size: var(--small-regular-font-size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

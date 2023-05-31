@@ -23,7 +23,7 @@ const FilterButton = () => {
             <img className='handCursor' onClick={handleFilterClick} src="images/setting.svg" alt="Filters" />
             {showFilter && (
                 <div className={styles.filterPanel}>
-                    <img className={`${styles.closeBtn} handCursor`} onClick={handleFilterClick} src="images/x.svg" alt="close" />
+                    <img className={`${styles.closeBtn} handCursor`} onClick={handleFilterClick} src="images/x.svg" alt="Close" />
                     <CategoryFilter />
                     <hr />
                     <PriceRangeFilter />

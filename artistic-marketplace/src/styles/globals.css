@@ -1,5 +1,6 @@
 /* Global Styles */
 :root {
+  --small-regular-font-size: 12px;
   --bigger-regular-font-size: 20px;
   --biggest-regular-font-size: 24px;
   --default-gray-text-color: #656565;
