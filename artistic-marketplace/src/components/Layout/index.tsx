@@ -11,6 +11,7 @@ import FilterButton from '../ProductGrid/FilterButton';
 import CategoryFilter from '../CategoryFilter';
 import PriceRangeFilter from '../PriceRangeFilter';
 import styles from './styles.module.css';
+import Breadcrumb from '../ProductGrid/Breadcrumb';
 
 const archivo = Archivo({ subsets: ['latin'] })
 
@@ -29,7 +30,7 @@ const Layout = () => {
                 <hr />
                 <div className={`row ${styles.filterBottonRow}`}>
                     <div className="col">
-                        {/* <Breadcrumb /> */}
+                        <Breadcrumb />
                     </div>
                     <div className="col d-flex justify-content-end mb-3 d-block d-lg-none">
                         {/* <SortButton /> */}
