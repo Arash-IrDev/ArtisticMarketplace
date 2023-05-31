@@ -2,7 +2,7 @@
     cursor: pointer;
     color: grey;
     font-weight: 600;
-    font-size: var(--biggest-regular-font-size);
+    font-size: var(--bigger-regular-font-size);
 }
 
 .pageItem.active,

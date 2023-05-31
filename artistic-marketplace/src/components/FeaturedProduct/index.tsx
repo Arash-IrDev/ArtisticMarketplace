@@ -16,7 +16,7 @@ const FeaturedProduct: React.FC<FeaturedProductProps> = ({ product, addProductTo
     <div className='jumbotron'>
       <div className='row my-3'>
         <div className='col-md-6'>
-          <h2>{product.name}</h2>
+          <h1>{product.name}</h1>
         </div>
         <div className="col-md-6 text-end">
           <button className={`${styles.addToCard} ${styles.desktop} add-to-card desktop`} onClick={() => addProductToCart(product)}>

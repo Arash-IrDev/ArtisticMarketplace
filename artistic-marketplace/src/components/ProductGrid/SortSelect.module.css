@@ -1,36 +1,57 @@
-.sortContainer {
-    display: flex;
+.dropDownContainer {
+    display: inline-flex;
     align-items: center;
+    position: relative;
 }
 
 .sortText {
     color: grey;
-    margin: 0 3px;
+    margin: 0 7px 0 3px;
 }
 
-.sortSelect {
+.sortButton {
     border: none;
     background: none;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    padding: 5px 32px 5px 5px;
-    background-image: url(/images/down_arrow.svg);
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: 32px;
+    padding: 5px;
     outline: none;
     border: 2px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.sortSelect::-ms-expand {
-    display: none;
+.arrowIcon {
+    height: 32px;
+    width: 32px;
+    margin-left: 4px;
 }
 
-.sortSelect option {
-    border-radius: 0;
+.dropdown {
+    position: absolute;
+    top: 100%;
+    right:0px;
+    width: 100%;
+    background: white;
+    border-radius: 0px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    min-width: max-content;
 }
 
-.sortSelect:hover {
+.dropdownItem {
+    width: 100%;
+    display: block;
+    text-align: left;
+    padding: 5px 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    /* white-space: nowrap; */
+}
+
+.dropdownItem:hover {
+    background: #f1f1f1;
+}
+
+.sortButton:hover {
     border: 2px solid gray;
 }
