@@ -19,7 +19,7 @@ const CartDropdown: React.FC<CartDropdownProps> = ({ onClose }) => {
     const { cartItems, clearCart } = cartContext;
 
     return (
-        <div className={styles.dropdown}>
+        <div className={`${styles.dropdown} col-12 col-md-6 col-lg-3`}>
             <img className={`${styles.closeBtn} handCursor`} onClick={onClose} src="/images/x.svg" alt="Close" />
             {cartItems.map((item, index) => (
                 <div key={index} className={styles.dropdownItem}>
