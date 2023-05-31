@@ -1,8 +1,14 @@
+// CartDropdown component
+
 import { useContext } from 'react';
 import { CartContext } from '../../contexts/CartContext';
 import styles from './CartDropdown.module.css';
 
-const CartDropdown = () => {
+type CartDropdownProps = {
+    onClose: () => void; // This function will be called when the close button is clicked
+}
+
+const CartDropdown: React.FC<CartDropdownProps> = ({ onClose }) => {
     const cartContext = useContext(CartContext);
 
     if (!cartContext) {
@@ -14,13 +20,17 @@ const CartDropdown = () => {
 
     return (
         <div className={styles.dropdown}>
-            <img className={`${styles.closeBtn} handCursor`} onClick={() => clearCart()} src="images/x.svg" alt="Close" />
+            <img className={`${styles.closeBtn} handCursor`} onClick={onClose} src="/images/x.svg" alt="Close" />
             {cartItems.map((item, index) => (
-                <div key={index} className={styles.cartItem}>
-                    <img src={item.image.src} alt={item.image.alt} />
-                    <div>
-                        <p>{item.name}</p>
-                        <p>${item.price}</p>
+                <div key={index} className={styles.dropdownItem}>
+                    <div className='row'>
+                        <div className='col-9'>
+                            <span>{item.name}</span><br />
+                            <span>${item.price}</span>
+                        </div>
+                        <div className={`${styles.itemImage} col-3`} >
+                            <img src={item.image.src} alt={item.image.alt} />
+                        </div>
                     </div>
                 </div>
             ))}

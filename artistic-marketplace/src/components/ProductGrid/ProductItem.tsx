@@ -1,15 +1,41 @@
-import React from 'react';
+import React, { useContext } from 'react'; // add this line
+import { toast } from 'react-toastify'; // add this line
 import { Product } from '../../db/models/ProductType';
 import styles from './ProductItem.module.css';
 import { useRouter } from 'next/router';
+import { CartContext } from '../../contexts/CartContext';
 
 type ProductItemProps = {
   product: Product,
-  addProductToCart: (product: Product) => void;
 };
 
-const ProductItem: React.FC<ProductItemProps> = ({ product, addProductToCart }) => {
+const ProductItem: React.FC<ProductItemProps> = ({ product }) => {
   const router = useRouter();
+  const cartContext = useContext(CartContext);
+
+  // check if cartContext is defined
+  if (!cartContext) {
+    throw new Error("Cannot find CartContext"); // We can replace this with a default behaviour or error handling
+  }
+
+  const { addToCart, cartItems } = cartContext;
+
+  const handleAddToCartClick = () => {
+    // check if product is already in the cart
+    const productInCart = cartItems.find(item => item._id === product._id);
+    if (productInCart) {
+      // show a toast notification that the product is already in the cart
+      toast.error('This product is already in your cart', {
+        position: toast.POSITION.TOP_LEFT,
+      });
+      return;
+    }
+    addToCart(product);
+    // show a toast notification that the product has been added to the cart
+    toast.success('Product added to cart successfully', {
+      position: toast.POSITION.TOP_LEFT,
+    });
+  }
 
   const handleProductClick = () => {
     router.push(`/product/${product._id}`);
@@ -19,7 +45,7 @@ const ProductItem: React.FC<ProductItemProps> = ({ product, addProductToCart }) 
     <div className="productItem">
       <div className={styles.imageHolder}>
         <div onClick={handleProductClick} className={styles.productImage} style={{ backgroundImage: `url(${product.image.src})` }}></div>
-        <button className="add-to-card" onClick={() => addProductToCart(product)}>Add to Cart</button>
+        <button className="add-to-cart" onClick={handleAddToCartClick}>Add to Cart</button>
       </div>
       <div className="product-info">
         <h3 className="grayText">{product.category.join(', ')}</h3>

@@ -28,8 +28,8 @@ const Header = () => {
                             <div className={styles.cartCountBadge}>
                                 {totalItemsInCart}
                             </div>
-                        )} 
-                        {showCartDropdown && <CartDropdown />}
+                        )}
+                        {showCartDropdown && <CartDropdown onClose={handleCartClick} />}
                     </div>
                 </div>
             </nav>

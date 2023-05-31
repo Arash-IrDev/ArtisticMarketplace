@@ -4,7 +4,7 @@
 
 .cartCountBadge {
     position: absolute;
-    top: 5px;
+    top: -7px;
     right: -7px;
     padding: 0px 6px;
     background-color: black;

@@ -1,18 +1,27 @@
-.photoOfTheDay{
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    padding: 20px 40px 10px 40px;
-    background-color: white;
+/* .topRow>div {
+  display: flex;
+  align-items: center;
+} */
+
+.topRow h1 {
+  margin-bottom: 0;
 }
 
-.photoOfTheDay h3{
-    color: black;
+.photoOfTheDay {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding: 20px 40px 10px 40px;
+  background-color: white;
+}
+
+.photoOfTheDay h3 {
+  color: black;
 }
 
 .imageHolder {
-    position: relative;
-    margin-bottom: 30px;
+  position: relative;
+  margin-bottom: 30px;
 }
 
 .productImage {
@@ -20,17 +29,16 @@
   height: auto;
 }
 
-.addToCard.desktop {
+.addToCart.desktop {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .addToCard.desktop {
+  .addToCart.desktop {
     display: inline-block;
   }
 
-  .addToCard.mobile {
+  .addToCart.mobile {
     display: none;
   }
 }
-

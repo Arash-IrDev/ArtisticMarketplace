@@ -42,22 +42,22 @@ hr {
   border-top: 3px solid gray;
 }
 
-.add-to-card {
+.add-to-cart {
   width: 100%;
   background-color: black;
   color: white;
-  padding: 7px 3px 3px 3px;
+  padding: 7px 3px 5px 3px;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 400;
   font-size: var(--bigger-regular-font-size);
 }
 
-.add-to-card:hover {
+.add-to-cart:hover {
   color: orange;
 }
 
-.jumbotron .add-to-card.desktop {
+.jumbotron .add-to-cart.desktop {
   max-width: 270px;
 }
 
