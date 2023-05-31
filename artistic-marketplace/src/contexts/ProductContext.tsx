@@ -126,7 +126,20 @@ export const ProductProvider: React.FC<ProductProviderProps> = ({ children }) =>
     }, [allProducts, selectedCategories, selectedPriceRange]);
 
     useEffect(() => {
-        const others = filteredProducts.filter((product: Product) => !product.featured);
+        const others = [...filteredProducts.filter((product: Product) => !product.featured)];
+
+        // sort the products according to the selected sorting method
+        others.sort((a, b) => {
+            switch (sorting) {
+                case 'priceLowHigh':
+                    return a.price - b.price;
+                case 'priceHighLow':
+                    return b.price - a.price;
+                default:
+                    return 0;
+            }
+        });
+
         // calculate total pages for the filtered products
         setTotalProductPages(Math.ceil(others.length / productsPerPage));
         // slice the filtered products for current page
@@ -134,7 +147,8 @@ export const ProductProvider: React.FC<ProductProviderProps> = ({ children }) =>
         const endIndex = startIndex + productsPerPage;
         setOtherProducts(others.slice(startIndex, endIndex));
 
-    }, [filteredProducts, currentPage, productsPerPage]);
+    }, [filteredProducts, currentPage, productsPerPage, sorting]);  // adding 'sorting' to the dependency array
+
 
     return (
         <ProductContext.Provider value={{ featuredProduct, allProducts, otherProducts, categories, selectedCategories, priceRanges, selectedPriceRange, toggleCategory, emptyFilters, selectPriceRange, getProductById, currentPage, changePage, totalProductPages, sorting, selectSorting }}>

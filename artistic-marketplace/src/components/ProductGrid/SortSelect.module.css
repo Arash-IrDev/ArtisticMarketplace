@@ -21,8 +21,8 @@
 }
 
 .arrowIcon {
-    height: 32px;
-    width: 32px;
+    height: 28px;
+    width: 28px;
     margin-left: 4px;
 }
 
@@ -45,7 +45,6 @@
     border: none;
     background: none;
     cursor: pointer;
-    /* white-space: nowrap; */
 }
 
 .dropdownItem:hover {

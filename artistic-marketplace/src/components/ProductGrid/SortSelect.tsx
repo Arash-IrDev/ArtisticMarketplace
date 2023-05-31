@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react';
+import { useContext, useState, useEffect, useRef } from 'react';
 import { ProductContext } from '../../contexts/ProductContext';
 import styles from './SortSelect.module.css'
 
@@ -8,12 +8,25 @@ const SortSelect: React.FC = () => {
     const options = [
         { value: "priceLowHigh", label: "Price (Low to High)" },
         { value: "priceHighLow", label: "Price (High to Low)" },
-        { value: "registrationNewOld", label: "Registration (New to Old)" },
-        { value: "registrationOldNew", label: "Registration (Old to New)" }
     ]
+    const dropdownRef = useRef<HTMLDivElement | null>(null);
+
+    useEffect(() => {
+        const handleClickOutside = (event: MouseEvent) => {
+            if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+                setIsOpen(false);
+            }
+        }
+        document.addEventListener('mousedown', handleClickOutside);
+
+        // Cleanup function to remove event listener
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        }
+    }, []);
 
     return (
-        <div className={styles.dropDownContainer} onBlur={() => setIsOpen(false)}>
+        <div ref={dropdownRef} className={styles.dropDownContainer}>
             <button onClick={() => setIsOpen(!isOpen)} className={styles.sortButton}>
                 <img src="images/sort.svg" alt="Sort" />
                 <div className='d-none d-lg-inline'>
