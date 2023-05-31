@@ -1,8 +1,9 @@
 import React from 'react';
 import { Product } from '../../db/models/ProductType';
-// import { truncateString } from '../../helpers/stringHelpers';
+import Breadcrumb from '../ProductGrid/Breadcrumb';
 import styles from './styles.module.css';
 import RelatedProducts from '../RelatedProducts';
+import { useRouter } from 'next/router'
 
 type FeaturedProductProps = {
   product: Product | null;
@@ -10,19 +11,34 @@ type FeaturedProductProps = {
 };
 
 const FeaturedProduct: React.FC<FeaturedProductProps> = ({ product, addProductToCart }) => {
+  const router = useRouter();
   if (!product) return <p>Loading...</p>;
+
+  const isProductDetailPage = router.pathname.includes('product');
 
   return (
     <div className='jumbotron'>
       <div className='row my-3'>
-        <div className='col-md-6'>
-          <h1>{product.name}</h1>
-        </div>
-        <div className="col-md-6 text-end">
-          <button className={`${styles.addToCard} ${styles.desktop} add-to-card desktop`} onClick={() => addProductToCart(product)}>
-            Add to Cart
-          </button>
-        </div>
+        {isProductDetailPage && (
+          <div className='col-12'>
+            <Breadcrumb />
+          </div>
+        )}
+        {!isProductDetailPage && (
+          <>
+            <div className='col-md-6'>
+              <h1>{product.name}</h1>
+            </div>
+            <div className='col-md-6 text-end'>
+              <button
+                className={`${styles.addToCard} ${styles.desktop} add-to-card desktop`}
+                onClick={() => addProductToCart(product)}
+              >
+                Add to Cart
+              </button>
+            </div>
+          </>
+        )}
       </div>
       <div className={styles.imageHolder}>
         <img
@@ -30,7 +46,7 @@ const FeaturedProduct: React.FC<FeaturedProductProps> = ({ product, addProductTo
           alt={product.image.alt}
           className={`${styles.productImage} img-fluid`}
         />
-        <div className={styles.photoOfTheDay}>
+        <div className={`${styles.photoOfTheDay} ${isProductDetailPage ? 'd-none' : ''}`}>
           <h3>Photo of the day</h3>
         </div>
       </div>
@@ -39,9 +55,19 @@ const FeaturedProduct: React.FC<FeaturedProductProps> = ({ product, addProductTo
       </button>
       <div className='row my-3'>
         <div className='col-md-6'>
-          <h3>About {product.name}</h3>
+          {isProductDetailPage && (
+            <h1>{product.name}</h1>
+          )}
+          {!isProductDetailPage && (
+            <h3>About {product.name}</h3>
+          )}
           <h3 className='grayText'>{product.category.join(', ')}</h3>
           <p className='grayText'>{product.details.description}</p>
+          <div className={isProductDetailPage ? '' : 'd-none'}>
+            <button className={`${styles.addToCard} ${styles.desktop} add-to-card desktop`} onClick={() => addProductToCart(product)}>
+              Add to Cart
+            </button>
+          </div>
         </div>
         <div className='col-md-6'>
           <div className='text-end'>
