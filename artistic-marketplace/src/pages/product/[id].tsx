@@ -4,6 +4,7 @@ import { ProductContext } from '../../contexts/ProductContext';
 import FeaturedProduct from '../../components/FeaturedProduct';
 import { Product } from '../../db/models/ProductType';
 import Layout from '../../components/Layout';
+import Head from 'next/head'
 
 const ProductDetailsPage = () => {
     const router = useRouter();
@@ -31,9 +32,18 @@ const ProductDetailsPage = () => {
     };
 
     return (
-        <Layout>
-        <FeaturedProduct product={product} addProductToCart={addProductToCart} />
-        </Layout>
+        <>
+            {product && (
+                <Head>
+                    <title>{product.name} - Artistic Marketplace</title>
+                    <meta name="description" content={`Explore ${product.name}, a unique artwork in our ${product.category} category. Add this artwork to your collection today.`} />
+                    <meta name="keywords" content={`${product.name}, ${product.category}, Artistic Marketplace, Buy Art`} />
+                </Head>
+            )}
+            <Layout>
+                <FeaturedProduct product={product} />
+            </Layout>
+        </>
     );
 };
 
