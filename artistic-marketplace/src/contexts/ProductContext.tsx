@@ -91,8 +91,6 @@ export const ProductProvider: React.FC<ProductProviderProps> = ({ children }) =>
 
     const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
 
-    // const changePage = (page: number) => setCurrentPage(page);
-
     useEffect(() => {
         fetch('/api/products')
             .then(response => response.json())
