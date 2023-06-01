@@ -1,5 +1,5 @@
-import React, { useContext } from 'react'; // add this line
-import { toast } from 'react-toastify'; // add this line
+import React, { useContext } from 'react'; 
+import { toast } from 'react-toastify'; 
 import { Product } from '../../db/models/ProductType';
 import styles from './ProductItem.module.css';
 import { useRouter } from 'next/router';

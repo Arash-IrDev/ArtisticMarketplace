@@ -1,7 +1,7 @@
 // Layout component
 import { Archivo } from 'next/font/google';
 import Header from '../Header';
-import { ReactNode } from 'react';
+import React, { ReactNode } from 'react';
 
 const archivo = Archivo({ subsets: ['latin'] });
 

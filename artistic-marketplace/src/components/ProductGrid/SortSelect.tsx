@@ -1,10 +1,11 @@
-import { useContext, useState, useEffect, useRef } from 'react';
+import React, { useContext, useState, useEffect, useRef } from 'react';
 import { ProductContext } from '../../contexts/ProductContext';
 import styles from './SortSelect.module.css'
+import Image from 'next/image';
 
 const SortSelect: React.FC = () => {
     const { sorting, selectSorting } = useContext(ProductContext);
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState<boolean>(false);
     const options = [
         { value: "priceLowHigh", label: "Price (Low to High)" },
         { value: "priceHighLow", label: "Price (High to Low)" },
@@ -28,11 +29,11 @@ const SortSelect: React.FC = () => {
     return (
         <div ref={dropdownRef} className={styles.dropDownContainer}>
             <button onClick={() => setIsOpen(!isOpen)} className={styles.sortButton}>
-                <img src="/images/sort.svg" className={styles.sortIcon} alt="Sort" />
+                <Image src="/images/sort.svg" className={styles.sortIcon} alt="Sort" />
                 <div className='d-none d-lg-inline'>
                     <span className={styles.sortText}>Sort By</span>
                     {options.find(option => option.value === sorting)?.label}
-                    <img src="/images/down_arrow.svg" className={styles.arrowIcon} />
+                    <Image src="/images/down_arrow.svg" className={styles.arrowIcon} alt="V" />
                 </div>
             </button>
             {isOpen && (

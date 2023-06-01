@@ -6,6 +6,7 @@ import styles from './styles.module.css';
 import RelatedProducts from '../RelatedProducts';
 import { useRouter } from 'next/router';
 import { CartContext } from '../../contexts/CartContext';
+import Image from 'next/image';
 
 type FeaturedProductProps = {
   product: Product | null;
@@ -67,10 +68,13 @@ const FeaturedProduct: React.FC<FeaturedProductProps> = ({ product }) => {
         )}
       </div>
       <div className={styles.imageHolder}>
-        <img
+        <Image
+          loading={'eager'}
+          width={product.details.dimensions.width}
+          height={product.details.dimensions.height}
           src={product.image.src}
           alt={product.image.alt}
-          className={`${styles.productImage} img-fluid`}
+          className={`${styles.productImage}`}
         />
         <div className={`${styles.photoOfTheDay} ${isProductDetailPage ? 'd-none' : ''}`}>
           <h3>Photo of the day</h3>

@@ -5,9 +5,10 @@ import { ProductContext } from '../../contexts/ProductContext';
 import CategoryFilter from '../CategoryFilter';
 import PriceRangeFilter from '../PriceRangeFilter';
 import styles from './FilterButton.module.css';
+import Image from 'next/image';
 
 const FilterButton = () => {
-    const [showFilter, setShowFilter] = useState(false);
+    const [showFilter, setShowFilter] = useState<boolean>(false);
     const { emptyFilters } = useContext(ProductContext);
 
     const handleFilterClick = () => {
@@ -20,10 +21,10 @@ const FilterButton = () => {
 
     return (
         <div className={styles.filterButton}>
-            <img className={`${styles.settingIcon} handCursor`} onClick={handleFilterClick} src="/images/setting.svg" alt="Filters" />
+            <Image className={`${styles.settingIcon} handCursor`} onClick={handleFilterClick} src="/images/setting.svg" alt="Filters" />
             {showFilter && (
                 <div className={styles.filterPanel}>
-                    <img className={`${styles.closeBtn} handCursor`} onClick={handleFilterClick} src="/images/x.svg" alt="Close" />
+                    <Image className={`${styles.closeBtn} handCursor`} onClick={handleFilterClick} src="/images/x.svg" alt="Close" />
                     <CategoryFilter />
                     <hr />
                     <PriceRangeFilter />

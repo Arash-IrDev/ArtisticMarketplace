@@ -1,5 +1,8 @@
 import { useRouter } from 'next/router'
 import styles from './Breadcrumb.module.css'
+import Link from 'next/link';
+import React from 'react';
+
 
 const Breadcrumb: React.FC = () => {
     const router = useRouter();
@@ -11,10 +14,10 @@ const Breadcrumb: React.FC = () => {
             <h2>
                 <ol className={styles.breadcrumb}>
                     <li>
-                        <a href="/"
+                        <Link href="/"
                             className={`${styles.breadcrumbItem} ${isProductDetailPage ? styles.breadcrumbItemLink : styles.breadcrumbItemDisabled}`}>
                             Premium Photos
-                        </a>
+                        </Link>
                     </li>
                     {isProductDetailPage && (
                         <>

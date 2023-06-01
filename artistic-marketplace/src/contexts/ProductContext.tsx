@@ -12,7 +12,7 @@ type ProductContextProps = {
     toggleCategory: (category: string) => void;
     emptyFilters: () => void;
     selectPriceRange: (range: string) => void;
-    getProductById: (id: string) => Product | undefined;
+    getProductById: (id: string) => Product | null;
     currentPage: number;
     changePage: (page: number) => void;
     totalProductPages: number;
@@ -31,7 +31,7 @@ export const ProductContext = createContext<ProductContextProps>({
     toggleCategory: () => { },
     emptyFilters: () => { },
     selectPriceRange: () => { },
-    getProductById: () => undefined,
+    getProductById: () => null,
     currentPage: 1,
     changePage: () => { },
     totalProductPages: 1,
@@ -45,7 +45,7 @@ type ProductProviderProps = {
 
 export const ProductProvider: React.FC<ProductProviderProps> = ({ children }) => {
     const [featuredProduct, setFeaturedProduct] = useState<Product | null>(null);
-    const [allProducts, setAllProducts] = useState<Product[]>([]); // state for allProducts
+    const [allProducts, setAllProducts] = useState<Product[]>([]);
     const [otherProducts, setOtherProducts] = useState<Product[]>([]);
     const [categories, setCategories] = useState<string[]>([]);
     const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
@@ -53,8 +53,9 @@ export const ProductProvider: React.FC<ProductProviderProps> = ({ children }) =>
     const [selectedPriceRange, setSelectedPriceRange] = useState<string | null>(null);
     const [currentPage, setCurrentPage] = useState<number>(1);
     const [productsPerPage, setProductsPerPage] = useState<number>(6);
-    const [totalProductPages, setTotalProductPages] = useState <number>(1);
+    const [totalProductPages, setTotalProductPages] = useState<number>(1);
     const [sorting, setSorting] = useState<string>('priceLowHigh');
+    const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
 
     // Function to handle changes to sorting
     const selectSorting = (sort: string) => {
@@ -86,10 +87,9 @@ export const ProductProvider: React.FC<ProductProviderProps> = ({ children }) =>
     };
 
     const getProductById = (id: string) => {
-        return allProducts.find(product => product._id === id);
+        const temp=allProducts.find(product => product._id === id);
+        if(temp===undefined) return null; else return temp;
     };
-
-    const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
 
     useEffect(() => {
         fetch('/api/products')
@@ -121,7 +121,8 @@ export const ProductProvider: React.FC<ProductProviderProps> = ({ children }) =>
 
         setFilteredProducts(filtered);
 
-    }, [allProducts, selectedCategories, selectedPriceRange]);
+    }, [allProducts, selectedCategories, selectedPriceRange, priceRanges]);
+
 
     useEffect(() => {
         const others = [...filteredProducts.filter((product: Product) => !product.featured)];
@@ -147,10 +148,13 @@ export const ProductProvider: React.FC<ProductProviderProps> = ({ children }) =>
 
     }, [filteredProducts, currentPage, productsPerPage, sorting]);  // adding 'sorting' to the dependency array
 
-
-    return (
-        <ProductContext.Provider value={{ featuredProduct, allProducts, otherProducts, categories, selectedCategories, priceRanges, selectedPriceRange, toggleCategory, emptyFilters, selectPriceRange, getProductById, currentPage, changePage, totalProductPages, sorting, selectSorting }}>
-            {children}
-        </ProductContext.Provider>
-    );
+    if (typeof window === 'undefined') {
+        return <div>Loading...</div>; 
+    } else {
+        return (
+            <ProductContext.Provider value={{ featuredProduct, allProducts, otherProducts, categories, selectedCategories, priceRanges, selectedPriceRange, toggleCategory, emptyFilters, selectPriceRange, getProductById, currentPage, changePage, totalProductPages, sorting, selectSorting }}>
+                {children}
+            </ProductContext.Provider>
+        );
+    }
 };

@@ -1,3 +1,4 @@
+import React from 'react';
 import { AppProps } from 'next/app';
 import { CartProvider } from '../contexts/CartContext';
 import { ProductProvider } from '../contexts/ProductContext';

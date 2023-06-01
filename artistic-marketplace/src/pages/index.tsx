@@ -1,3 +1,4 @@
+import React from 'react';
 import Layout from '../components/Layout';
 import { useContext } from 'react';
 import { ProductContext } from '../contexts/ProductContext';
