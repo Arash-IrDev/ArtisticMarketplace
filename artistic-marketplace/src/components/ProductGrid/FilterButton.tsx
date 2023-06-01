@@ -20,7 +20,7 @@ const FilterButton = () => {
 
     return (
         <div className={styles.filterButton}>
-            <img className='handCursor' onClick={handleFilterClick} src="/images/setting.svg" alt="Filters" />
+            <img className={`${styles.settingIcon} handCursor`} onClick={handleFilterClick} src="/images/setting.svg" alt="Filters" />
             {showFilter && (
                 <div className={styles.filterPanel}>
                     <img className={`${styles.closeBtn} handCursor`} onClick={handleFilterClick} src="/images/x.svg" alt="Close" />

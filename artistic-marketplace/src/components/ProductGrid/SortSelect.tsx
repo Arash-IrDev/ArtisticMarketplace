@@ -28,7 +28,7 @@ const SortSelect: React.FC = () => {
     return (
         <div ref={dropdownRef} className={styles.dropDownContainer}>
             <button onClick={() => setIsOpen(!isOpen)} className={styles.sortButton}>
-                <img src="/images/sort.svg" alt="Sort" />
+                <img src="/images/sort.svg" className={styles.sortIcon} alt="Sort" />
                 <div className='d-none d-lg-inline'>
                     <span className={styles.sortText}>Sort By</span>
                     {options.find(option => option.value === sorting)?.label}

@@ -7,7 +7,7 @@
     "price": 29.99,
     "currency": "USD",
     "image": {
-      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/a_black_and_white_photo_of_a_dog_in_a_field.jpg",
+      "src": "https://storage.googleapis.com/forpub/bejamas/shop/a_black_and_white_photo_of_a_dog_in_a_field.jpg",
       "alt": "Black and White Photo of a Dog in a Field"
     },
     "bestseller": true,
@@ -33,7 +33,7 @@
     "price": 49.99,
     "currency": "USD",
     "image": {
-      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/a_breathtaking_photo_of_a_sea_dawn_landscape_at_sunset.jpg",
+      "src": "https://storage.googleapis.com/forpub/bejamas/shop/a_breathtaking_photo_of_a_sea_dawn_landscape_at_sunset.jpg",
       "alt": "Breathtaking Photo of a Sea Dawn Landscape at Sunset"
     },
     "bestseller": false,
@@ -59,7 +59,7 @@
     "price": 19.99,
     "currency": "USD",
     "image": {
-      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/a_close_up_of_a_poodle_dog_looking_at_the_camera.jpg",
+      "src": "https://storage.googleapis.com/forpub/bejamas/shop/a_close_up_of_a_poodle_dog_looking_at_the_camera.jpg",
       "alt": "Close-Up of a Poodle Dog Looking at the Camera"
     },
     "bestseller": true,
@@ -86,7 +86,7 @@
     "price": 24.99,
     "currency": "USD",
     "image": {
-      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/a_couple_of_kids_that_are_sitting_in_front_of_a_book.jpg",
+      "src": "https://storage.googleapis.com/forpub/bejamas/shop/a_couple_of_kids_that_are_sitting_in_front_of_a_book.jpg",
       "alt": "Couple of Kids Sitting in Front of a Book"
     },
     "bestseller": false,
@@ -112,7 +112,7 @@
     "price": 29.99,
     "currency": "USD",
     "image": {
-      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/a_couple_of_people_that_are_laying_on_the_ground.jpg",
+      "src": "https://storage.googleapis.com/forpub/bejamas/shop/a_couple_of_people_that_are_laying_on_the_ground.jpg",
       "alt": "Couple of People Laying on the Ground"
     },
     "bestseller": false,
@@ -139,7 +139,7 @@
     "price": 39.99,
     "currency": "USD",
     "image": {
-      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/a_guy_and_a_lady_are_bouncing_and_dancing_on_the_beach.jpg",
+      "src": "https://storage.googleapis.com/forpub/bejamas/shop/a_guy_and_a_lady_are_bouncing_and_dancing_on_the_beach.jpg",
       "alt": "Guy and Lady Bouncing and Dancing on the Beach"
     },
     "bestseller": true,
@@ -166,7 +166,7 @@
     "price": 34.99,
     "currency": "USD",
     "image": {
-      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/a_lady_and_a_guy_are_both_holding_babies.jpg",
+      "src": "https://storage.googleapis.com/forpub/bejamas/shop/a_lady_and_a_guy_are_both_holding_babies.jpg",
       "alt": "Lady and Guy Holding Babies"
     },
     "bestseller": false,
@@ -193,7 +193,7 @@
     "price": 44.99,
     "currency": "USD",
     "image": {
-      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/a_little_boy_and_a_little_girl_walking_down_a_street.jpg",
+      "src": "https://storage.googleapis.com/forpub/bejamas/shop/a_little_boy_and_a_little_girl_walking_down_a_street.jpg",
       "alt": "Little Boy and Little Girl Walking Down a Street"
     },
     "bestseller": true,
@@ -220,7 +220,7 @@
     "price": 29.99,
     "currency": "USD",
     "image": {
-      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/a_man_holding_a_small_brown_and_white_dog.jpg",
+      "src": "https://storage.googleapis.com/forpub/bejamas/shop/a_man_holding_a_small_brown_and_white_dog.jpg",
       "alt": "Man Holding a Small Brown and White Dog"
     },
     "bestseller": true,
@@ -247,7 +247,7 @@
     "price": 39.99,
     "currency": "USD",
     "image": {
-      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/a_man_riding_a_skateboard_down_a_street_at_night.jpg",
+      "src": "https://storage.googleapis.com/forpub/bejamas/shop/a_man_riding_a_skateboard_down_a_street_at_night.jpg",
       "alt": "Man Riding a Skateboard Down a Street at Night"
     },
     "bestseller": false,
@@ -273,7 +273,7 @@
     "price": 34.99,
     "currency": "USD",
     "image": {
-      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/a_man_taking_a_picture_of_himself_with_a_camera.jpg",
+      "src": "https://storage.googleapis.com/forpub/bejamas/shop/a_man_taking_a_picture_of_himself_with_a_camera.jpg",
       "alt": "Man Taking a Picture of Himself with a Camera"
     },
     "bestseller": false,
@@ -299,7 +299,7 @@
     "price": 49.99,
     "currency": "USD",
     "image": {
-      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/a_person_laying_on_a_bed_reading_a_book.jpg",
+      "src": "https://storage.googleapis.com/forpub/bejamas/shop/a_person_laying_on_a_bed_reading_a_book.jpg",
       "alt": "Person Laying on a Bed Reading a Book"
     },
     "bestseller": false,
@@ -325,7 +325,7 @@
     "price": 19.99,
     "currency": "USD",
     "image": {
-      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/a_pitcher_of_coffee_and_two_cookies_on_a_table.jpg",
+      "src": "https://storage.googleapis.com/forpub/bejamas/shop/a_pitcher_of_coffee_and_two_cookies_on_a_table.jpg",
       "alt": "Pitcher of Coffee and Two Cookies on a Table"
     },
     "bestseller": true,
@@ -351,7 +351,7 @@
     "price": 24.99,
     "currency": "USD",
     "image": {
-      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/a_rice_field_with_a_house_in_the_middle_of_it.jpg",
+      "src": "https://storage.googleapis.com/forpub/bejamas/shop/a_rice_field_with_a_house_in_the_middle_of_it.jpg",
       "alt": "Rice Field with a House in the Middle of It"
     },
     "bestseller": false,
@@ -377,7 +377,7 @@
     "price": 29.99,
     "currency": "USD",
     "image": {
-      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/a_small_brown_dog_standing_in_the_snow.jpg",
+      "src": "https://storage.googleapis.com/forpub/bejamas/shop/a_small_brown_dog_standing_in_the_snow.jpg",
       "alt": "Small Brown Dog Standing in the Snow"
     },
     "bestseller": false,
@@ -403,7 +403,7 @@
     "price": 14.99,
     "currency": "USD",
     "image": {
-      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/a_snow_covered_mountain_in_the_middle_of_a_cloud_filled_sky.jpg",
+      "src": "https://storage.googleapis.com/forpub/bejamas/shop/a_snow_covered_mountain_in_the_middle_of_a_cloud_filled_sky.jpg",
       "alt": "Snow-Covered Mountain in the Middle of a Cloud-Filled Sky"
     },
     "bestseller": false,
@@ -430,7 +430,7 @@
     "price": 34.99,
     "currency": "USD",
     "image": {
-      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/a_woman_jumping_in_the_air_with_a_red_bag.jpg",
+      "src": "https://storage.googleapis.com/forpub/bejamas/shop/a_woman_jumping_in_the_air_with_a_red_bag.jpg",
       "alt": "Woman Jumping in the Air with a Red Bag"
     },
     "bestseller": true,
@@ -456,7 +456,7 @@
     "price": 24.99,
     "currency": "USD",
     "image": {
-      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/a_woman_taking_a_picture_with_a_camera.jpg",
+      "src": "https://storage.googleapis.com/forpub/bejamas/shop/a_woman_taking_a_picture_with_a_camera.jpg",
       "alt": "Woman Taking a Picture with a Camera"
     },
     "bestseller": false,
@@ -482,7 +482,7 @@
     "price": 19.99,
     "currency": "USD",
     "image": {
-      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/a_woman_wearing_headphones_and_smiling_at_the_camera.jpg",
+      "src": "https://storage.googleapis.com/forpub/bejamas/shop/a_woman_wearing_headphones_and_smiling_at_the_camera.jpg",
       "alt": "Woman Wearing Headphones and Smiling at the Camera"
     },
     "bestseller": true,
@@ -508,7 +508,7 @@
     "price": 39.99,
     "currency": "USD",
     "image": {
-      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/a_wooden_table_topped_with_a_chemex_glass_coffee_maker_and_cookies.jpg",
+      "src": "https://storage.googleapis.com/forpub/bejamas/shop/a_wooden_table_topped_with_a_chemex_glass_coffee_maker_and_cookies.jpg",
       "alt": "Wooden Table Topped with a Chemex Glass Coffee Maker and Cookies"
     },
     "bestseller": false,
@@ -534,7 +534,7 @@
     "price": 29.99,
     "currency": "USD",
     "image": {
-      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/an_animal_standing_on_top_of_a_dry_grass_field.jpg",
+      "src": "https://storage.googleapis.com/forpub/bejamas/shop/an_animal_standing_on_top_of_a_dry_grass_field.jpg",
       "alt": "Animal Standing on Top of a Dry Grass Field"
     },
     "bestseller": false,
@@ -560,7 +560,7 @@
     "price": 39.99,
     "currency": "USD",
     "image": {
-      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/an_open_book_with_a_pair_of_glasses_on_top_of_it.jpg",
+      "src": "https://storage.googleapis.com/forpub/bejamas/shop/an_open_book_with_a_pair_of_glasses_on_top_of_it.jpg",
       "alt": "Open Book with a Pair of Glasses on Top of It"
     },
     "bestseller": false,
@@ -586,7 +586,7 @@
     "price": 44.99,
     "currency": "USD",
     "image": {
-      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/father_mother_and_child_lying_on_bed_feet_peeking_from_under_blanket.jpg",
+      "src": "https://storage.googleapis.com/forpub/bejamas/shop/father_mother_and_child_lying_on_bed_feet_peeking_from_under_blanket.jpg",
       "alt": "Father, Mother, and Child Lying on Bed, Feet Peeking from Under Blanket"
     },
     "bestseller": true,
@@ -614,7 +614,7 @@
     "price": 29.99,
     "currency": "USD",
     "image": {
-      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/person_family_sitting_in_front_of_and_on_top_of_a_bed.jpg",
+      "src": "https://storage.googleapis.com/forpub/bejamas/shop/person_family_sitting_in_front_of_and_on_top_of_a_bed.jpg",
       "alt": "Family Sitting in Front of and on Top of a Bed"
     },
     "bestseller": false,
@@ -641,7 +641,7 @@
     "price": 24.99,
     "currency": "USD",
     "image": {
-      "src": "https://raw.githubusercontent.com/Arash-IrDev/art-commerce-plex/master/public/images/product-images/two_children_sitting_in_a_teepee_reading_a_book.jpg",
+      "src": "https://storage.googleapis.com/forpub/bejamas/shop/two_children_sitting_in_a_teepee_reading_a_book.jpg",
       "alt": "Two Children Sitting in a Teepee Reading a Book"
     },
     "bestseller": false,
