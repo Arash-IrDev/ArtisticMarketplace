@@ -21,7 +21,7 @@ const CartDropdown: React.FC<CartDropdownProps> = ({ onClose }) => {
 
     return (
         <div className={`${styles.dropdown} col-12 col-md-6 col-lg-3`}>
-            <Image className={`${styles.closeBtn} handCursor`} onClick={onClose} src="/images/x.svg" alt="Close" />
+            <Image width={32} height={32} className={`${styles.closeBtn} handCursor`} onClick={onClose} src="/images/x.svg" alt="Close" />
             {cartItems.map((item, index) => (
                 <div key={index} className={styles.dropdownItem}>
                     <div className='row'>
@@ -30,7 +30,7 @@ const CartDropdown: React.FC<CartDropdownProps> = ({ onClose }) => {
                             <span>${item.price}</span>
                         </div>
                         <div className={`${styles.itemImage} col-3`} >
-                            <Image src={item.image.src} alt={item.image.alt} />
+                            <Image height={60} src={item.image.src} alt={item.image.alt} />
                         </div>
                     </div>
                 </div>

@@ -87,8 +87,8 @@ export const ProductProvider: React.FC<ProductProviderProps> = ({ children }) =>
     };
 
     const getProductById = (id: string) => {
-        const temp=allProducts.find(product => product._id === id);
-        if(temp===undefined) return null; else return temp;
+        const temp = allProducts.find(product => product._id === id);
+        if (temp === undefined) return null; else return temp;
     };
 
     useEffect(() => {
@@ -148,13 +148,10 @@ export const ProductProvider: React.FC<ProductProviderProps> = ({ children }) =>
 
     }, [filteredProducts, currentPage, productsPerPage, sorting]);  // adding 'sorting' to the dependency array
 
-    if (typeof window === 'undefined') {
-        return <div>Loading...</div>; 
-    } else {
-        return (
-            <ProductContext.Provider value={{ featuredProduct, allProducts, otherProducts, categories, selectedCategories, priceRanges, selectedPriceRange, toggleCategory, emptyFilters, selectPriceRange, getProductById, currentPage, changePage, totalProductPages, sorting, selectSorting }}>
-                {children}
-            </ProductContext.Provider>
-        );
-    }
+    return (
+        <ProductContext.Provider value={{ featuredProduct, allProducts, otherProducts, categories, selectedCategories, priceRanges, selectedPriceRange, toggleCategory, emptyFilters, selectPriceRange, getProductById, currentPage, changePage, totalProductPages, sorting, selectSorting }}>
+            {children}
+        </ProductContext.Provider>
+    );
+
 };

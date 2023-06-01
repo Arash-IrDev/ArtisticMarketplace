@@ -29,11 +29,11 @@ const SortSelect: React.FC = () => {
     return (
         <div ref={dropdownRef} className={styles.dropDownContainer}>
             <button onClick={() => setIsOpen(!isOpen)} className={styles.sortButton}>
-                <Image src="/images/sort.svg" className={styles.sortIcon} alt="Sort" />
+                <Image width={28} height={28} src="/images/sort.svg" className={styles.sortIcon} alt="Sort" />
                 <div className='d-none d-lg-inline'>
                     <span className={styles.sortText}>Sort By</span>
                     {options.find(option => option.value === sorting)?.label}
-                    <Image src="/images/down_arrow.svg" className={styles.arrowIcon} alt="V" />
+                    <Image width={28} height={28} src="/images/down_arrow.svg" className={styles.arrowIcon} alt="V" />
                 </div>
             </button>
             {isOpen && (

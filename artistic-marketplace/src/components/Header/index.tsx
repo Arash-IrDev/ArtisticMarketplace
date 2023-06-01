@@ -22,10 +22,10 @@ const Header = () => {
             <nav className="navbar navbar-expand-lg navbar-light mb-3">
                 <div className="container-fluid p-0 position-relative">
                     <Link className="navbar-brand" href="/">
-                        <Image src="/images/logo.svg" className={styles.bejamasLogo} alt="Bejamas Logo" />
+                        <Image width={160} height={25.33} src="/images/logo.svg" className={styles.bejamasLogo} alt="Bejamas Logo" />
                     </Link>
                     <div className={`${styles.cartButton} nav-link`} onClick={handleCartClick}>
-                        <Image src="/images/cart.svg" className={styles.cartIcon} alt="Cart Icon" />
+                        <Image width={30.72} height={27.304} src="/images/cart.svg" className={styles.cartIcon} alt="Cart Icon" />
                         {totalItemsInCart > 0 && (
                             <div className={styles.cartCountBadge}>
                                 {totalItemsInCart}

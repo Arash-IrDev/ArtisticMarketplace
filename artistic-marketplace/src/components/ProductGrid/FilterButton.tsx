@@ -21,10 +21,10 @@ const FilterButton = () => {
 
     return (
         <div className={styles.filterButton}>
-            <Image className={`${styles.settingIcon} handCursor`} onClick={handleFilterClick} src="/images/setting.svg" alt="Filters" />
+            <Image width={32} height={32} className={`${styles.settingIcon} handCursor`} onClick={handleFilterClick} src="/images/setting.svg" alt="Filters" />
             {showFilter && (
                 <div className={styles.filterPanel}>
-                    <Image className={`${styles.closeBtn} handCursor`} onClick={handleFilterClick} src="/images/x.svg" alt="Close" />
+                    <Image width={32} height={32} className={`${styles.closeBtn} handCursor`} onClick={handleFilterClick} src="/images/x.svg" alt="Close" />
                     <CategoryFilter />
                     <hr />
                     <PriceRangeFilter />
