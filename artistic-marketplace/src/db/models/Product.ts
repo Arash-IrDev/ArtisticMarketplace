@@ -1,5 +1,6 @@
 import mongoose from 'mongoose';
 
+// Define the schema for the Product collection
 const ProductSchema = new mongoose.Schema({
   name: String,
   category: [String],
@@ -22,4 +23,5 @@ const ProductSchema = new mongoose.Schema({
   },
 });
 
+// Create a model based on the Product schema
 export const Product = mongoose.models.Product || mongoose.model('Product', ProductSchema);

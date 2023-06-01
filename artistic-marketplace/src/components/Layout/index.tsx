@@ -1,4 +1,15 @@
-// Layout component
+/**
+ * Layout Component
+ *
+ * This component represents the layout of the application. It wraps the content with a container and
+ * includes the Header component at the top. The Archivo font is applied to the layout.
+ *
+ * Usage:
+ * <Layout>
+ *    ...content
+ * </Layout>
+ */
+
 import { Archivo } from 'next/font/google';
 import Header from '../Header';
 import React, { ReactNode } from 'react';

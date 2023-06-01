@@ -1,4 +1,14 @@
-// CartDropdown component
+/**
+ * CartDropdown Component
+ *
+ * This component displays a dropdown menu for the shopping cart. It shows the cart items, provides a button to clear the cart, and displays a message when the cart is empty. It uses the CartContext to access the cartItems and clearCart function.
+ *
+ * Props:
+ * - onClose: Function called when the close button is clicked
+ *
+ * Usage:
+ * <CartDropdown onClose={handleClose} />
+ */
 
 import React, { useContext } from 'react';
 import { CartContext } from '../../contexts/CartContext';
@@ -13,14 +23,14 @@ const CartDropdown: React.FC<CartDropdownProps> = ({ onClose }) => {
     const cartContext = useContext(CartContext);
 
     if (!cartContext) {
-        // handle the case where the context is not provided
+        // Handle the case where the context is not provided
         return null;
     }
 
     const { cartItems, clearCart } = cartContext;
 
     return (
-        <div className={`${styles.dropdown} col-12 col-md-6 col-lg-3`}>
+        <div className={`${styles.dropdown} col-12 col-md-6 col-lg-4`}>
             <Image width={32} height={32} className={`${styles.closeBtn} handCursor`} onClick={onClose} src="/images/x.svg" alt="Close" />
             {cartItems.map((item, index) => (
                 <div key={index} className={styles.dropdownItem}>

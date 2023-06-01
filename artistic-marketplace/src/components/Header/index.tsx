@@ -1,4 +1,11 @@
-// Header component
+/**
+ * Header Component
+ *
+ * This component represents the header of the application. It includes the logo, cart button, and cart dropdown.
+ *
+ * Usage:
+ * <Header />
+ */
 
 import React, { useContext, useState } from 'react';
 import { CartContext } from '../../contexts/CartContext';

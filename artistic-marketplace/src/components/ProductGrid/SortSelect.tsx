@@ -13,6 +13,7 @@ const SortSelect: React.FC = () => {
     const dropdownRef = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
+        // Handle click outside the dropdown to close it
         const handleClickOutside = (event: MouseEvent) => {
             if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
                 setIsOpen(false);
@@ -28,22 +29,24 @@ const SortSelect: React.FC = () => {
 
     return (
         <div ref={dropdownRef} className={styles.dropDownContainer}>
+            {/* Sort button */}
             <button onClick={() => setIsOpen(!isOpen)} className={styles.sortButton}>
                 <Image width={28} height={28} src="/images/sort.svg" className={styles.sortIcon} alt="Sort" />
                 <div className='d-none d-lg-inline'>
                     <span className={styles.sortText}>Sort By</span>
-                    {options.find(option => option.value === sorting)?.label}
+                    {options.find(option => option.value === sorting)?.label} {/* Display selected sorting option */}
                     <Image width={28} height={28} src="/images/down_arrow.svg" className={styles.arrowIcon} alt="V" />
                 </div>
             </button>
+            {/* Dropdown */}
             {isOpen && (
                 <div className={styles.dropdown}>
                     {options.map(option => (
                         <button
                             key={option.value}
                             onClick={() => {
-                                selectSorting(option.value)
-                                setIsOpen(false)
+                                selectSorting(option.value); // Set selected sorting option
+                                setIsOpen(false); // Close the dropdown
                             }}
                             className={styles.dropdownItem}
                         >

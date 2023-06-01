@@ -1,4 +1,6 @@
 /* Global Styles */
+
+/* CSS variables for font sizes and colors */
 :root {
   --small-regular-font-size: 12px;
   --bigger-regular-font-size: 20px;
@@ -6,42 +8,51 @@
   --default-gray-text-color: #656565;
 }
 
+/* Text color for elements with class "grayText" and its descendants */
 .grayText,
 .grayText * {
   color: var(--default-gray-text-color);
 }
 
+/* Font size class */
 .biggerFontSize {
   font-size: var(--bigger-regular-font-size);
 }
 
+/* Font size class */
 .biggestFontSize {
   font-size: var(--biggest-regular-font-size);
 }
 
+/* Heading level 1 */
 h1 {
   font-size: 32px;
   font-weight: bold;
 }
 
+/* Heading level 2 */
 h2 {
   font-size: 24px;
   font-weight: bold;
 }
 
+/* Heading level 3 */
 h3 {
   font-size: 20px;
   font-weight: bold;
 }
 
+/* Body font size */
 body {
   font-size: 18px;
 }
 
+/* Horizontal rule style */
 hr {
   border-top: 3px solid gray;
 }
 
+/* Add to cart button style */
 .add-to-cart {
   width: 100%;
   background-color: black;
@@ -53,18 +64,22 @@ hr {
   font-size: var(--bigger-regular-font-size);
 }
 
+/* Add to cart button style on hover */
 .add-to-cart:hover {
   color: orange;
 }
 
+/* Add to cart button style for desktop in jumbotron */
 .jumbotron .add-to-cart.desktop {
   max-width: 270px;
 }
 
+/* Remove default button border */
 button {
   border: 0px;
 }
 
+/* Cursor style for clickable elements */
 .handCursor {
   cursor: pointer;
 }
@@ -76,6 +91,7 @@ button {
   align-items: center;
 }
 
+/* Hide default checkbox input */
 .styled-checkbox input[type="checkbox"],
 .styled-checkbox input[type="radio"] {
   display: none;
@@ -88,13 +104,10 @@ button {
   top: 0;
   left: 0;
   height: 23px;
-  /* adjust size here */
   width: 23px;
   min-width: 23px;
-  /* adjust size here */
   background-color: white;
   border: 2px solid black;
-  /* adjust border thickness here */
   box-sizing: border-box;
 }
 

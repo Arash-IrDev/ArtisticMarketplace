@@ -4,7 +4,7 @@ import { ProductContext } from '../../contexts/ProductContext';
 import FeaturedProduct from '../../components/FeaturedProduct';
 import { Product } from '../../db/models/ProductType';
 import Layout from '../../components/Layout';
-import Head from 'next/head'
+import Head from 'next/head';
 
 const ProductDetailsPage = () => {
     const router = useRouter();
@@ -27,6 +27,7 @@ const ProductDetailsPage = () => {
         return <p>Loading...</p>;
     }
 
+    // Function to handle adding a product to the cart
     const addProductToCart = (product: Product) => {
         console.log('Add to cart clicked:', product);
     };
@@ -35,12 +36,16 @@ const ProductDetailsPage = () => {
         <>
             {product && (
                 <Head>
+                    {/* Sets the title of the webpage */}
                     <title>{product.name} - Artistic Marketplace</title>
+                    {/* Sets the meta description of the webpage */}
                     <meta name="description" content={`Explore ${product.name}, a unique artwork in our ${product.category} category. Add this artwork to your collection today.`} />
+                    {/* Sets the meta keywords of the webpage */}
                     <meta name="keywords" content={`${product.name}, ${product.category}, Artistic Marketplace, Buy Art`} />
                 </Head>
             )}
             <Layout>
+                {/* Renders the featured product */}
                 <FeaturedProduct product={product} />
             </Layout>
         </>
@@ -48,4 +53,3 @@ const ProductDetailsPage = () => {
 };
 
 export default ProductDetailsPage;
-

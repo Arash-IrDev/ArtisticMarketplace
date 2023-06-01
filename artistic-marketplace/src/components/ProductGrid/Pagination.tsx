@@ -13,18 +13,30 @@ const Pagination: React.FC<Props> = ({ currentPage, totalPages, onPageChange }) 
     return (
         <nav aria-label="Page navigation">
             <ul className={`px-0 text-center ${styles.pagination}`}>
-                <li className={`${styles.pageItem} ${currentPage === 1 ? styles.disabled : ''}`}
-                    onClick={() => currentPage > 1 && onPageChange(currentPage - 1)}>
+                {/* Previous Page Button */}
+                <li
+                    className={`${styles.pageItem} ${currentPage === 1 ? styles.disabled : ''}`}
+                    onClick={() => currentPage > 1 && onPageChange(currentPage - 1)}
+                >
                     <span className={styles.pageLink}>&lt;</span>
                 </li>
+
+                {/* Page Number Buttons */}
                 {pages.map(page => (
-                    <li key={page} className={`${styles.pageItem} ${page === currentPage ? styles.active : ''}`}
-                        onClick={() => onPageChange(page)}>
+                    <li
+                        key={page}
+                        className={`${styles.pageItem} ${page === currentPage ? styles.active : ''}`}
+                        onClick={() => onPageChange(page)}
+                    >
                         <span className={styles.pageLink}>{page}</span>
                     </li>
                 ))}
-                <li className={`${styles.pageItem} ${currentPage === totalPages ? styles.disabled : ''}`}
-                    onClick={() => currentPage < totalPages && onPageChange(currentPage + 1)}>
+
+                {/* Next Page Button */}
+                <li
+                    className={`${styles.pageItem} ${currentPage === totalPages ? styles.disabled : ''}`}
+                    onClick={() => currentPage < totalPages && onPageChange(currentPage + 1)}
+                >
                     <span className={styles.pageLink}>&gt;</span>
                 </li>
             </ul>

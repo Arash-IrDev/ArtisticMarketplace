@@ -1,3 +1,12 @@
+/**
+ * FeaturedProduct Component
+ *
+ * This component represents a single product like featured product and displays its details, including the name, image, description, price, dimensions, and related products. It also provides functionality to add the product to the cart and shows toast notifications for cart actions.
+ *
+ * Usage:
+ * <FeaturedProduct product={product} />
+ */
+
 import React, { useContext } from 'react';
 import { toast } from 'react-toastify';
 import { Product } from '../../db/models/ProductType';
@@ -18,7 +27,7 @@ const FeaturedProduct: React.FC<FeaturedProductProps> = ({ product }) => {
 
   // check if cartContext is defined
   if (!cartContext) {
-    throw new Error("Cannot find CartContext"); // we can replace this with a default behaviour or error handling
+    throw new Error("Cannot find CartContext"); // we can replace this with a default behavior or error handling
   }
 
   const { addToCart, cartItems } = cartContext;
@@ -26,7 +35,7 @@ const FeaturedProduct: React.FC<FeaturedProductProps> = ({ product }) => {
   if (!product) return <p>Loading...</p>;
 
   const isProductDetailPage = router.pathname.includes('product');
- 
+
   const handleAddToCartClick = () => {
     // check if product is already in the cart
     if (cartItems.find(item => item._id === product._id)) {

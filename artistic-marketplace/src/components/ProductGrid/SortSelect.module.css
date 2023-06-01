@@ -2,11 +2,13 @@
     display: inline-flex;
     align-items: center;
     position: relative;
+    /* Container for the dropdown */
 }
 
 .sortText {
     color: grey;
     margin: 0 7px 0 3px;
+    /* Styling for the "Sort By" text */
 }
 
 .sortButton {
@@ -18,12 +20,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* Styling for the sort button */
 }
 
 .arrowIcon {
     height: 28px;
     width: 28px;
     margin-left: 4px;
+    /* Styling for the arrow icon */
 }
 
 .dropdown {
@@ -35,6 +39,7 @@
     border-radius: 0px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     min-width: max-content;
+    /* Styling for the dropdown container */
 }
 
 .dropdownItem {
@@ -45,17 +50,21 @@
     border: none;
     background: none;
     cursor: pointer;
+    /* Styling for the dropdown items */
 }
 
 .dropdownItem:hover {
     background: #f1f1f1;
+    /* Styling for the dropdown items on hover */
 }
 
 .sortButton:hover {
     border: 2px solid gray;
+    /* Styling for the sort button on hover */
 }
 
 .sortIcon {
     width: 28px;
     height: 28px;
+    /* Styling for the sort icon */
 }

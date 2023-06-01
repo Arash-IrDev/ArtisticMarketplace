@@ -1,4 +1,11 @@
-// CategoryFilter component
+/**
+ * CategoryFilter Component
+ *
+ * This component displays a list of categories as checkboxes, allowing the user to filter products by category. It uses the ProductContext to access the categories and selectedCategories state, and toggleCategory function for handling category selection.
+ *
+ * Usage:
+ * <CategoryFilter />
+ */
 
 import React, { useContext } from 'react';
 import { ProductContext } from '../../contexts/ProductContext';
@@ -12,7 +19,7 @@ const CategoryFilter = () => {
             <h3>Categories</h3>
             {categories.map(category => (
                 <div key={category} className='styled-checkbox py-2'>
-                    <input 
+                    <input
                         type="checkbox"
                         id={category}
                         checked={selectedCategories.includes(category)}

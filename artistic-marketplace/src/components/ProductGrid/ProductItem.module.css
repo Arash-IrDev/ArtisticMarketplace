@@ -1,6 +1,6 @@
 .productImage {
     width: 100%;
-    /* Or set a fixed width */
+    /* Or we can set a fixed width */
     height: 0;
     /* Set this to be 0 initially */
     padding-top: 120%;

@@ -1,8 +1,6 @@
 .thumbnail {
     width: 120px;
-    /* Change to your desired width */
     height: 150px;
-    /* Change to your desired height */
     background-size: cover;
     background-position: center;
     margin-left: 20px;

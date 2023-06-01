@@ -15,6 +15,9 @@ interface Details {
     recommendations: string[];
 }
 
+/**
+ * Interface representing a product.
+ */
 export interface Product {
     _id: string;
     name: string;

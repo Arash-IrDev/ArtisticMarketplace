@@ -19,10 +19,12 @@ const RelatedProducts: React.FC<RelatedProductsProps> = ({ productId }) => {
     };
 
     useEffect(() => {
+        // Fetch related products based on the provided productId
         if (getProductById && allProducts.length > 0) {
             const product = getProductById(productId);
 
             if (product) {
+                // Filter products with the same category as the current product, excluding itself
                 const sameCategoryProducts = allProducts.filter(
                     (p) =>
                         p.category.some((cat) => product.category.includes(cat)) &&
@@ -31,6 +33,7 @@ const RelatedProducts: React.FC<RelatedProductsProps> = ({ productId }) => {
 
                 const selectedProducts: Product[] = [];
 
+                // Select three random products from the same category
                 while (
                     selectedProducts.length < 3 &&
                     sameCategoryProducts.length > 0
@@ -53,10 +56,10 @@ const RelatedProducts: React.FC<RelatedProductsProps> = ({ productId }) => {
             <div className={`d-flex justify-content-end ${styles.productRow}`}>
                 {relatedProducts.map((product) => (
                     <div
-                        onClick={() => handleProductClick(product)} // Pass a function reference
+                        onClick={() => handleProductClick(product)} // Handle click event to navigate to the selected product
                         className={`${styles.thumbnail} handCursor`}
                         key={product._id}
-                        style={{ backgroundImage: `url(${product.image.src})` }}
+                        style={{ backgroundImage: `url(${product.image.src})` }} // Set background image using the product's image source
                     ></div>
                 ))}
             </div>
